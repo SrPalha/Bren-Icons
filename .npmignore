@@ -1,0 +1,37 @@
+# Arquivos de desenvolvimento
+src/
+scripts/
+examples/
+icones/
+.github/
+.vscode/
+
+# Arquivos de configuração
+rollup.config.js
+vite.config.ts
+tsconfig.json
+tailwind.config.js
+
+# Arquivos de build temporários
+*.log
+*.tsbuildinfo
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Dependências de desenvolvimento
+node_modules/
+
+# Arquivos de teste
+test/
+tests/
+__tests__/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Documentação de desenvolvimento
+CONTRIBUTING.md
+CHANGELOG.md

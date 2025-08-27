@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bren Icons - Galeria de Ícones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #64748b;
+        }
+
+        .controls {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            align-items: end;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .control-group label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+
+        .control-group input,
+        .control-group select {
+            padding: 0.5rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .control-group input:focus,
+        .control-group select:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .preview {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .preview h2 {
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .preview-icon {
+            display: inline-block;
+            padding: 2rem;
+            background: transparent;
+            border-radius: 8px;
+            margin: 1rem;
+        }
+
+        .preview-code {
+            background: #1e293b;
+            color: #10b981;
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        .categories {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .category {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        .icons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: #fafafa;
+        }
+
+        .icon-item:hover {
+            border-color: #3b82f6;
+            background: #eff6ff;
+            transform: translateY(-2px);
+        }
+
+        .icon-item.selected {
+            border-color: #3b82f6;
+            background: #eff6ff;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+        }
+
+        .icon-item svg {
+            margin-bottom: 0.5rem;
+        }
+
+        .icon-name {
+            font-size: 0.8rem;
+            text-align: center;
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .stats {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .stats span {
+            font-weight: 600;
+            color: #3b82f6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .icons-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Bren Icons</h1>
+            <p>Biblioteca completa de ícones SVG personalizados</p>
+        </div>
+
+        <div class="stats">
+            <p>Total de ícones: <span id="total-icons">0</span></p>
+        </div>
+
+        <div class="controls">
+            <h3>Controles</h3>
+            <div class="controls-grid">
+                <div class="control-group">
+                    <label for="icon-select">Ícone Selecionado</label>
+                    <select id="icon-select">
+                        <option value="">Selecione um ícone...</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="size-slider">Tamanho: <span id="size-value">24</span>px</label>
+                    <input type="range" id="size-slider" min="16" max="64" value="24">
+                </div>
+                <div class="control-group">
+                    <label for="color-picker">Cor</label>
+                    <input type="color" id="color-picker" value="#3b82f6">
+                </div>
+            </div>
+        </div>
+
+        <div class="preview">
+            <h2>Preview do Ícone</h2>
+            <div id="preview-container">
+                <div class="preview-icon">
+                    <p>Selecione um ícone para visualizar</p>
+                </div>
+            </div>
+            <div id="preview-code" class="preview-code" style="display: none;"></div>
+        </div>
+
+        <div class="search-box" placeholder="Buscar ícones..."></div>
+
+        <div class="categories" id="categories-container">
+            <!-- Categorias serão inseridas aqui via JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Definir os ícones diretamente (sem módulos ES6 para funcionar localmente)
+        const Icons = {
+            // Exemplo de ícones
+            Home: function({ size = 24, color = 'currentColor', className = '' }) {
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', size);
+                svg.setAttribute('height', size);
+                svg.setAttribute('viewBox', '0 0 24 24');
+                svg.setAttribute('fill', 'none');
+                svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                if (className) svg.setAttribute('class', className);
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', 'M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z');
+                path.setAttribute('fill', color);
+                
+                svg.appendChild(path);
+                return svg;
+            },
+            
+            Search: function({ size = 24, color = 'currentColor', className = '' }) {
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', size);
+                svg.setAttribute('height', size);
+                svg.setAttribute('viewBox', '0 0 24 24');
+                svg.setAttribute('fill', 'none');
+                svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                if (className) svg.setAttribute('class', className);
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', 'M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z');
+                path.setAttribute('fill', color);
+                
+                svg.appendChild(path);
+                return svg;
+            },
+            
+            Add: function({ size = 24, color = 'currentColor', className = '' }) {
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', size);
+                svg.setAttribute('height', size);
+                svg.setAttribute('viewBox', '0 0 24 24');
+                svg.setAttribute('fill', 'none');
+                svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                if (className) svg.setAttribute('class', className);
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', 'M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z');
+                path.setAttribute('fill', color);
+                
+                svg.appendChild(path);
+                return svg;
+            },
+            
+            Star: function({ size = 24, color = 'currentColor', className = '' }) {
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', size);
+                svg.setAttribute('height', size);
+                svg.setAttribute('viewBox', '0 0 24 24');
+                svg.setAttribute('fill', 'none');
+                svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                if (className) svg.setAttribute('class', className);
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', 'M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z');
+                path.setAttribute('fill', color);
+                
+                svg.appendChild(path);
+                return svg;
+            },
+            
+            Heart: function({ size = 24, color = 'currentColor', className = '' }) {
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', size);
+                svg.setAttribute('height', size);
+                svg.setAttribute('viewBox', '0 0 24 24');
+                svg.setAttribute('fill', 'none');
+                svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                if (className) svg.setAttribute('class', className);
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', 'M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z');
+                path.setAttribute('fill', color);
+                
+                svg.appendChild(path);
+                return svg;
+            }
+        };
+
+        // Configurações
+        let selectedIcon = null;
+        let iconSize = 24;
+        let iconColor = '#3b82f6';
+
+        // Elementos DOM
+        const iconSelect = document.getElementById('icon-select');
+        const sizeSlider = document.getElementById('size-slider');
+        const sizeValue = document.getElementById('size-value');
+        const colorPicker = document.getElementById('color-picker');
+        const previewContainer = document.getElementById('preview-container');
+        const previewCode = document.getElementById('preview-code');
+        const searchBox = document.querySelector('.search-box');
+        const categoriesContainer = document.getElementById('categories-container');
+        const totalIconsElement = document.getElementById('total-icons');
+
+        // Categorias dos ícones (usando apenas os ícones definidos)
+        const categories = {
+            'Navegação': ['Home', 'Search'],
+            'Ações': ['Add'],
+            'Interface': ['Star', 'Heart']
+        };
+
+        // Função para criar um ícone
+        function createIcon(iconName, size, color, className = '') {
+            if (Icons[iconName]) {
+                return Icons[iconName]({ size, color, className });
+            }
+            return null;
+        }
+
+        // Função para atualizar o preview
+        function updatePreview() {
+            if (!selectedIcon) return;
+
+            const icon = createIcon(selectedIcon, iconSize, iconColor);
+            if (icon) {
+                previewContainer.innerHTML = '';
+                const iconWrapper = document.createElement('div');
+                iconWrapper.className = 'preview-icon';
+                iconWrapper.appendChild(icon);
+                previewContainer.appendChild(iconWrapper);
+
+                // Mostrar código
+                previewCode.style.display = 'block';
+                previewCode.textContent = `<${selectedIcon} size={${iconSize}} color="${iconColor}" />`;
+            }
+        }
+
+        // Função para popular o select
+        function populateIconSelect() {
+            const iconNames = Object.keys(Icons).filter(key => key !== 'IconProps');
+            iconNames.forEach(name => {
+                const option = document.createElement('option');
+                option.value = name;
+                option.textContent = name;
+                iconSelect.appendChild(option);
+            });
+        }
+
+        // Função para criar a galeria de categorias
+        function createCategories() {
+            categoriesContainer.innerHTML = '';
+            
+            Object.entries(categories).forEach(([categoryName, iconNames]) => {
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'category';
+                
+                const title = document.createElement('h3');
+                title.textContent = categoryName;
+                categoryDiv.appendChild(title);
+                
+                const iconsGrid = document.createElement('div');
+                iconsGrid.className = 'icons-grid';
+                
+                iconNames.forEach(iconName => {
+                    if (Icons[iconName]) {
+                        const iconItem = document.createElement('div');
+                        iconItem.className = 'icon-item';
+                        iconItem.onclick = () => selectIcon(iconName);
+                        
+                        const icon = createIcon(iconName, 32, '#6b7280');
+                        if (icon) {
+                            iconItem.appendChild(icon);
+                        }
+                        
+                        const iconNameSpan = document.createElement('span');
+                        iconNameSpan.className = 'icon-name';
+                        iconNameSpan.textContent = iconName;
+                        iconItem.appendChild(iconNameSpan);
+                        
+                        iconsGrid.appendChild(iconItem);
+                    }
+                });
+                
+                categoryDiv.appendChild(iconsGrid);
+                categoriesContainer.appendChild(categoryDiv);
+            });
+        }
+
+        // Função para selecionar um ícone
+        function selectIcon(iconName) {
+            selectedIcon = iconName;
+            iconSelect.value = iconName;
+            updatePreview();
+            
+            // Atualizar seleção visual
+            document.querySelectorAll('.icon-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+            
+            // Encontrar e selecionar o item clicado
+            const iconItems = document.querySelectorAll('.icon-item');
+            iconItems.forEach(item => {
+                if (item.querySelector('.icon-name').textContent === iconName) {
+                    item.classList.add('selected');
+                }
+            });
+        }
+
+        // Função de busca
+        function filterIcons(searchTerm) {
+            const iconItems = document.querySelectorAll('.icon-item');
+            iconItems.forEach(item => {
+                const iconName = item.querySelector('.icon-name').textContent.toLowerCase();
+                if (iconName.includes(searchTerm.toLowerCase())) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Event listeners
+        iconSelect.addEventListener('change', (e) => {
+            if (e.target.value) {
+                selectIcon(e.target.value);
+            }
+        });
+
+        sizeSlider.addEventListener('input', (e) => {
+            iconSize = parseInt(e.target.value);
+            sizeValue.textContent = iconSize;
+            updatePreview();
+        });
+
+        colorPicker.addEventListener('change', (e) => {
+            iconColor = e.target.value;
+            updatePreview();
+        });
+
+        searchBox.addEventListener('input', (e) => {
+            filterIcons(e.target.value);
+        });
+
+        // Inicialização
+        function init() {
+            populateIconSelect();
+            createCategories();
+            
+            // Contar total de ícones
+            const totalIcons = Object.keys(Icons).filter(key => key !== 'IconProps').length;
+            totalIconsElement.textContent = totalIcons;
+            
+            console.log('Bren Icons carregado com sucesso!');
+            console.log(`Total de ícones disponíveis: ${totalIcons}`);
+        }
+
+        // Aguardar o carregamento da página
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
