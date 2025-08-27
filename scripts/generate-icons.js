@@ -69,7 +69,7 @@ function generateIcons() {
   const iconsDir = path.join(__dirname, '../icones');
   const srcIconsDir = path.join(__dirname, '../src/icons');
   
-  // Criar diretório src/icons se não existir
+  // Criar diretório src/icons se não existir  .
   if (!fs.existsSync(srcIconsDir)) {
     fs.mkdirSync(srcIconsDir, { recursive: true });
   }
