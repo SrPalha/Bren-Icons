@@ -21,6 +21,9 @@ const categorizeIcons = (icons: Record<string, any>) => {
   }
 
   Object.keys(icons).forEach(iconName => {
+    // Pular o objeto "Icons" que não é um ícone real
+    if (iconName === 'Icons') return
+    
     const lowerName = iconName.toLowerCase()
     
     if (lowerName.includes('nav') || lowerName.includes('menu') || lowerName.includes('location') || lowerName.includes('mail') || lowerName.includes('house')) {
