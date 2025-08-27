@@ -48,11 +48,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/patri/Bren-Icons.git"
+    "url": "https://github.com/SrPalha/Bren-Icons.git"
   },
-  "homepage": "https://github.com/patri/Bren-Icons#readme",
+  "homepage": "https://github.com/SrPalha/Bren-Icons#readme",
   "bugs": {
-    "url": "https://github.com/patri/Bren-Icons/issues"
+    "url": "https://github.com/SrPalha/Bren-Icons/issues"
   },
   "dependencies": {
     "tslib": "^2.8.1"
