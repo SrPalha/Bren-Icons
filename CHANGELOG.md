@@ -5,6 +5,14 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [1.0.1] - 2024-12-19
+
+### Adicionado
+- Configuração completa do GitHub (CI/CD, templates de issues, workflows)
+- Templates para bug reports e feature requests
+- Guia de contribuição detalhado
+- Workflows automatizados para build e publicação
+
 ## [1.0.0] - 2024-12-19
 
 ### Adicionado
