@@ -7,11 +7,11 @@
 [![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Demo](https://img.shields.io/badge/Demo-ffffff?logo=Vercel&logoColor=000000)](https://reactjs.org/)
 
-Uma biblioteca completa de **116+ ícones SVG personalizados** para React, construída com TypeScript e otimizada para performance.
+Uma biblioteca completa de **323 ícones SVG personalizados** para React, construída com TypeScript e otimizada para performance.
 
 ## ✨ Características
 
-- **116+ ícones SVG** organizados por categoria
+- **323 ícones SVG** organizados por categoria
 - **Componentes React TypeScript** totalmente tipados
 - **Props personalizáveis** (size, color, className)
 - **Tree-shaking** suportado para bundles otimizados
@@ -121,7 +121,7 @@ function NavigationIcon({ isActive }) {
 }
 ```
 
-## 📚 Ícones Disponíveis (116 Total)
+## 📚 Ícones Disponíveis (323 Total)
 
 ### 🧭 Navegação (12 ícones)
 - `AccountCircle` - Ícone de perfil de usuário
@@ -266,7 +266,7 @@ function NavigationIcon({ isActive }) {
 
 ### ✨ Funcionalidades do Demo
 
-- **Visualização completa** de todos os 116 ícones
+- **Visualização completa** de todos os 323 ícones
 - **Busca em tempo real** por nome ou categoria
 - **Filtros por categoria** organizados
 - **Cópia de código** com um clique
