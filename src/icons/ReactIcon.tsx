@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconProps } from '../types';
 
-const React: React.FC<IconProps> = ({ 
+const ReactIcon: React.FC<IconProps> = ({ 
   size = 24, 
   color = 'currentColor', 
   className = '',
@@ -25,4 +25,4 @@ const React: React.FC<IconProps> = ({
   );
 };
 
-export default React;
+export default ReactIcon;

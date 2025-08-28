@@ -325,6 +325,7 @@ export { default as WpsOfficeRectangle } from './WpsOfficeRectangle';
 export { default as Xing } from './Xing';
 export { default as Yelp } from './Yelp';
 export { default as Youtube } from './Youtube';
+export { default as ReactIcon } from './ReactIcon';
 export { default as Zoom } from './Zoom';
 export { default as ZoomCircle } from './ZoomCircle';
 
