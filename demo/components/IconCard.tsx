@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { IconProps } from 'bren-icons'
+import { IconProps } from '../app/types'
 import { Copy, Check } from 'lucide-react'
 
 interface IconCardProps {
@@ -14,7 +14,7 @@ export default function IconCard({ name, Icon, category }: IconCardProps) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
-    const importCode = `import { ${name} } from 'bren-icons'`
+    const importCode = `import { ${name} } from './icons'`
     const usageCode = `<${name} size={24} color="currentColor" />`
     
     const fullCode = `${importCode}\n\n${usageCode}`

@@ -375,11 +375,17 @@
         const categoriesContainer = document.getElementById('categories-container');
         const totalIconsElement = document.getElementById('total-icons');
 
-        // Categorias dos ícones (usando apenas os ícones definidos)
+        // Categorias dos ícones organizadas logicamente
         const categories = {
-            'Navegação': ['Home', 'Search'],
-            'Ações': ['Add'],
-            'Interface': ['Star', 'Heart']
+            'Navegação': ['AccountCircle', 'LocationOn', 'Mail', 'Search', 'House', 'HouseFilled', 'NavigateBefore', 'NavigateNext'],
+            'Ações': ['Add', 'AddCircle', 'Delete', 'Download', 'Edit', 'Share', 'Upload', 'Check', 'Close', 'Cancel'],
+            'Mídia': ['Camera', 'Pause', 'Play', 'Playfilled', 'Videocam', 'MusicNote', 'Photo', 'GIF'],
+            'Interface': ['Star', 'StarFilled', 'Heart', 'Bookmark', 'BookmarkFilled', 'Settings', 'Settingsfilled', 'Menu', 'Menu3dot'],
+            'Formulários': ['Checkbox', 'Checkboxfilled', 'Checkboxoutlineblank', 'RadioButtonChecked', 'RadioButtonUnchecked', 'CheckCircleGreen'],
+            'Transporte': ['Car', 'CarParking', 'Bus', 'Taxi', 'Subway', 'DirectionsWalk'],
+            'Comunicação': ['ChatBubble', 'MailOpen', 'Send', 'Notifications', 'Person', 'Groups'],
+            'Sistema': ['Darkmode', 'Lightmode', 'Sun', 'Moon', 'MobileFriendly', 'Internet'],
+            'Outros': ['Calendar', 'Clock', 'Folder', 'FolderFilled', 'Inbox', 'InboxDownload', 'InboxUpload', 'Copy', 'Scissor', 'Seal', 'Smile', 'Translation', 'Bitcoin', 'Bitcoinfilled', 'Fastfoward', 'Fastbackrewind', 'FastForwardFilled', 'Fastbackrewindfilled', 'Skip', 'Skipfilled', 'Skippreviousback', 'Skippreviousbackfilled', 'SplitSceneRounded', 'SplitSceneRoundedFilled', 'Treedothorizontal', 'DotsSixVertical', 'MinusSign', 'Mic', 'Minikeydown', 'Minikeyup', 'Minikeyright', 'Minikeyleft', 'Keyboard', 'Keyboardarrowdown', 'Keyboardarrowup', 'Keyboardleft', 'Keyboardright', 'KeyboardReturn', 'LetterSpacing', 'LinkForward', 'Eyeopen', 'Eyeclosed', 'AttachFile', 'Arrowleft', 'Arrowright', 'ArrowSquareIn', 'ArrowSquareOut', 'AlertCircle', 'AlertCircleYellow', 'CheckList', 'CheckSmall', 'Checkboxoutlineblankminus', 'Checkboxoutlineblankminusfilled', 'CancelCircleRed', 'LocationOnFilled']
         };
 
         // Função para criar um ícone

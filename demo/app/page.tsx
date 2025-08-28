@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react'
 import { Search, Filter, Download, Github, Package } from 'lucide-react'
 import IconCard from '../components/IconCard'
-import * as Icons from 'bren-icons'
+import * as Icons from './icons'
 
 // Função para categorizar automaticamente os ícones baseado em seus nomes
 const categorizeIcons = (icons: Record<string, any>) => {
@@ -15,7 +15,7 @@ const categorizeIcons = (icons: Record<string, any>) => {
     'Transporte': [],
     'Comunicação': [],
     'Sistema': [],
-    'Formulário': [],
+    'Formulários': [],
     'Criptomoeda': [],
     'Utilitários': []
   }
@@ -26,9 +26,9 @@ const categorizeIcons = (icons: Record<string, any>) => {
     
     const lowerName = iconName.toLowerCase()
     
-    if (lowerName.includes('nav') || lowerName.includes('menu') || lowerName.includes('location') || lowerName.includes('mail') || lowerName.includes('house')) {
+    if (lowerName.includes('nav') || lowerName.includes('menu') || lowerName.includes('location') || lowerName.includes('mail') || lowerName.includes('house') || lowerName.includes('account')) {
       categories['Navegação'].push(iconName)
-    } else if (lowerName.includes('add') || lowerName.includes('delete') || lowerName.includes('edit') || lowerName.includes('share') || lowerName.includes('upload') || lowerName.includes('download') || lowerName.includes('copy') || lowerName.includes('close') || lowerName.includes('check') || lowerName.includes('cancel') || lowerName.includes('scissor') || lowerName.includes('seal')) {
+    } else if (lowerName.includes('add') || lowerName.includes('delete') || lowerName.includes('edit') || lowerName.includes('share') || lowerName.includes('upload') || lowerName.includes('download') || lowerName.includes('copy') || lowerName.includes('close') || lowerName.includes('check') || lowerName.includes('cancel') || lowerName.includes('scissor') || lowerName.includes('seal') || lowerName.includes('minus')) {
       categories['Ações'].push(iconName)
     } else if (lowerName.includes('camera') || lowerName.includes('play') || lowerName.includes('pause') || lowerName.includes('fast') || lowerName.includes('skip') || lowerName.includes('video') || lowerName.includes('mic') || lowerName.includes('music') || lowerName.includes('photo') || lowerName.includes('gif')) {
       categories['Mídia'].push(iconName)
@@ -40,8 +40,8 @@ const categorizeIcons = (icons: Record<string, any>) => {
       categories['Comunicação'].push(iconName)
     } else if (lowerName.includes('dark') || lowerName.includes('light') || lowerName.includes('folder') || lowerName.includes('moon') || lowerName.includes('sun') || lowerName.includes('split') || lowerName.includes('tree')) {
       categories['Sistema'].push(iconName)
-    } else if (lowerName.includes('checkbox') || lowerName.includes('radio') || lowerName.includes('checklist')) {
-      categories['Formulário'].push(iconName)
+    } else if (lowerName.includes('checkbox') || lowerName.includes('radio') || lowerName.includes('checklist') || lowerName.includes('checkcircle')) {
+      categories['Formulários'].push(iconName)
     } else if (lowerName.includes('bitcoin')) {
       categories['Criptomoeda'].push(iconName)
     } else {
@@ -85,7 +85,7 @@ export default function HomePage() {
 
   const handleCopyAll = async () => {
     const allIcons = Object.values(iconCategories).flat()
-    const importCode = `import { ${allIcons.join(', ')} } from 'bren-icons'`
+    const importCode = `import { ${allIcons.join(', ')} } from './icons'`
     
     try {
       await navigator.clipboard.writeText(importCode)
@@ -104,7 +104,7 @@ export default function HomePage() {
             <div>
               <h1 className="text-3xl font-bold text-gray-900">Bren Icons</h1>
               <p className="text-gray-600 mt-1">
-                Biblioteca completa de ícones SVG para React
+                Biblioteca completa de ícones SVG para React - Demo Local
               </p>
             </div>
             
@@ -176,7 +176,7 @@ export default function HomePage() {
 
           {/* Estatísticas */}
           <div className="mt-4 text-sm text-gray-600">
-            Mostrando {filteredIcons.length} de {Object.keys(Icons).length} ícones disponíveis
+            Mostrando {filteredIcons.length} de {Object.values(iconCategories).flat().length} ícones disponíveis
           </div>
         </div>
 
@@ -218,7 +218,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
             <p className="mb-2">
-              <strong>Bren Icons</strong> - Biblioteca de ícones SVG para React
+              <strong>Bren Icons</strong> - Biblioteca de ícones SVG para React - Demo
             </p>
             <p className="text-sm">
               Desenvolvido com ❤️ pela Bren
