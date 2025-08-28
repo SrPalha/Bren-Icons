@@ -1,7 +1,7 @@
 {
   "name": "bren-icons",
-  "version": "1.0.1",
-  "description": "Uma biblioteca de ícones SVG personalizados para React",
+  "version": "1.0.2",
+  "description": "Uma biblioteca completa de 116+ ícones SVG personalizados para React, construída com TypeScript e otimizada para performance",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
