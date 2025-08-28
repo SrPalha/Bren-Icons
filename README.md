@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Demo](https://img.shields.io/badge/Demo-ffffff?logo=Vercel&logoColor=000000)](https://reactjs.org/)
+[![Demo](https://img.shields.io/badge/Demo-ffffff?logo=Vercel&logoColor=000000)](https://bren-icons.vercel.app)
 
 Uma biblioteca completa de **116+ ícones SVG personalizados** para React, construída com TypeScript e otimizada para performance.
 
