@@ -1,0 +1,17 @@
+# Arquivos desnecessários para o deploy
+node_modules
+dist
+.git
+.github
+scripts
+examples
+*.log
+.env*
+.DS_Store
+Thumbs.db
+
+# Manter apenas o necessário para o demo
+!demo/
+!package.json
+!README.md
+!LICENSE
