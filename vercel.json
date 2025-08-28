@@ -3,10 +3,5 @@
   "outputDirectory": "demo/.next",
   "framework": "nextjs",
   "installCommand": "cd demo && npm install",
-  "devCommand": "cd demo && npm run dev",
-  "functions": {
-    "demo/app/**/*.tsx": {
-      "maxDuration": 30
-    }
-  }
+  "devCommand": "cd demo && npm run dev"
 } 
