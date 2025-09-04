@@ -17,7 +17,7 @@ const CheckSmall: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M6.75 13.5L9.375 16.125L17.25 7.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.75 13.5L9.375 16.125L17.25 7.875" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

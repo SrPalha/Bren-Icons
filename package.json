@@ -17,6 +17,7 @@
     "prepublishOnly": "npm run clean && npm run build",
     "rename-svg": "node scripts/rename-svg-files.js",
     "fix-names": "node scripts/fix-remaining-names.js",
+    "fix-svg": "node scripts/fix-svg-and-names.js",
     "generate-icons": "node scripts/generate-icons.js",
     "publish:check": "node scripts/publish.js"
   },
