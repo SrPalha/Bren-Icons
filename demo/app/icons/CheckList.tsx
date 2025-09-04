@@ -17,7 +17,7 @@ const CheckList: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M11 6H21M11 12H21M11 18H21M3 7.39286C3 7.39286 4 8.04466 4.5 9C4.5 9 6 5.25 8 4M3 18.3929C3 18.3929 4 19.0447 4.5 20C4.5 20 6 16.25 8 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11 6H21M11 12H21M11 18H21M3 7.39286C3 7.39286 4 8.04466 4.5 9C4.5 9 6 5.25 8 4M3 18.3929C3 18.3929 4 19.0447 4.5 20C4.5 20 6 16.25 8 15" stroke="currentColor" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

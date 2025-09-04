@@ -17,7 +17,7 @@ const Menu: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M4 5H20M4 12H20M4 19H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4 5H20M4 12H20M4 19H20" stroke="currentColor" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

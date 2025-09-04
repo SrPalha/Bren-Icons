@@ -17,7 +17,7 @@ const MinusSign: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M17.3333 12H6.66666" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17.3333 12H6.66666" stroke="currentColor" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };
