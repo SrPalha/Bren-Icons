@@ -17,7 +17,7 @@ const Keyboardarrowup: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <g clip-path="url(#clip0_93_534)">
+      <g clipPath="url(#clip0_93_534)">
 <path d="M18 15C18 15 13.5811 9.00001 12 9C10.4188 8.99999 6 15 6 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
 </g>
 <defs>

@@ -17,7 +17,7 @@ const DotsSixVertical: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <g clip-path="url(#clip0_93_542)">
+      <g clipPath="url(#clip0_93_542)">
 <path d="M8 6H8.00635M8 12H8.00635M8 18H8.00635M15.9937 6H16M15.9937 12H16M15.9937 18H16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
 </g>
 <defs>
