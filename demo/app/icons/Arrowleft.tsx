@@ -17,7 +17,7 @@ const Arrowleft: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M4 12H20M4 12C4.00001 13.3176 8.99996 17 8.99996 17M4 12C3.99999 10.6824 9 7 9 7" stroke="currentColor" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+      <path d="M4 12H20M4 12C4.00001 13.3176 8.99996 17 8.99996 17M4 12C3.99999 10.6824 9 7 9 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

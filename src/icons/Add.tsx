@@ -17,7 +17,7 @@ const Add: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M12 4V20M4 12H20" stroke="currentColor" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+      <path d="M12 4V20M4 12H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

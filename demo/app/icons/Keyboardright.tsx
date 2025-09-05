@@ -17,7 +17,7 @@ const Keyboardright: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M11 6C11 6 17 10.4189 17 12C17 13.5812 11 18 11 18" stroke="currentColor" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+      <path d="M11 6C11 6 17 10.4189 17 12C17 13.5812 11 18 11 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

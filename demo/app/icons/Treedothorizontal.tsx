@@ -17,7 +17,7 @@ const Treedothorizontal: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M11.9959 12H12.0049M17.9998 12H18.0088M5.99982 12H6.0088" stroke="currentColor" strokeWidth="2.5" stroke-linecap="round" strokeLinejoin="round"/>
+      <path d="M11.9959 12H12.0049M17.9998 12H18.0088M5.99982 12H6.0088" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

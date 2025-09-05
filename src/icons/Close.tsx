@@ -17,7 +17,7 @@ const Close: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M19 5L5 19M5 5L19 19" stroke="currentColor" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+      <path d="M19 5L5 19M5 5L19 19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

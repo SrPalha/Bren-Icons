@@ -17,8 +17,8 @@ const Webflow2: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M11.5 10.5L13 18.5H13.566C15.6349 18.5 17.4901 17.2259 18.2327 15.2949L22 5.5H21.6038C19.4516 5.5 17.541 6.87715 16.8604 8.91886L15 14.5L14 5.5" stroke="#1B1C1B" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
-<path d="M11.5 10.5L9.71664 15.2556C8.98482 17.2071 7.08422 18.5 5 18.5L2 5.5C4.27721 5.5 6.19025 7.21226 6.44173 9.47554L7 14.5L9.26031 8.68777C10.0077 6.76591 11.8583 5.5 13.9203 5.5H14" stroke="#1B1C1B" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+      <path d="M11.5 10.5L13 18.5H13.566C15.6349 18.5 17.4901 17.2259 18.2327 15.2949L22 5.5H21.6038C19.4516 5.5 17.541 6.87715 16.8604 8.91886L15 14.5L14 5.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.5 10.5L9.71664 15.2556C8.98482 17.2071 7.08422 18.5 5 18.5L2 5.5C4.27721 5.5 6.19025 7.21226 6.44173 9.47554L7 14.5L9.26031 8.68777C10.0077 6.76591 11.8583 5.5 13.9203 5.5H14" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

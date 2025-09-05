@@ -17,7 +17,7 @@ const Wise: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M11 22L19.0001 2H7.00008L9.5 6.5L5 11H12" stroke="#1B1C1B" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+      <path d="M11 22L19.0001 2H7.00008L9.5 6.5L5 11H12" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

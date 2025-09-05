@@ -17,7 +17,7 @@ const Check: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" strokeWidth="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+      <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };

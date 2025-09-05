@@ -17,7 +17,7 @@ const Menu3dot: React.FC<IconProps> = ({
       className={className}
       {...props}
     >
-      <path d="M11.992 12H12.001M11.9842 18H11.9932M11.9998 6H12.0088" stroke="currentColor" strokeWidth="2.5" stroke-linecap="round" strokeLinejoin="round"/>
+      <path d="M11.992 12H12.001M11.9842 18H11.9932M11.9998 6H12.0088" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   );
 };
