@@ -1,10 +1,27 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Squarelockadd01: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const SquareLockAdd01: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M11.066 22a93.99 93.99 0 0 1-4.41-.1c-1.73-.076-3.15-1.385-3.381-3.055C3.125 17.755 3 16.638 3 15.5c0-1.138.124-2.255.275-3.345.231-1.67 1.652-2.979 3.38-3.056C8.112 9.034 9.589 9 11.216 9c1.628 0 3.106.034 4.561.1A3.588 3.588 0 0 1 19 11.5"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6.5 9V6.5a4.5 4.5 0 0 1 9 0V9"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M17 22v-8m-4 4h8"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M11.0658 22C9.43835 22 8.11054 21.966 6.6557 21.9009C4.92675 21.8235 3.50598 20.515 3.27504 18.8447C3.12431 17.7547 3 16.6376 3 15.5C3 14.3624 3.12431 13.2453 3.27504 12.1553C3.50598 10.485 4.92675 9.17649 6.6557 9.09909C8.11054 9.03397 9.5884 9 11.2159 9C12.8433 9 14.3212 9.03397 15.776 9.09909C17.2713 9.16603 18.536 10.1538 19 11.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M6.5 9V6.5C6.5 4.01472 8.51472 2 11 2C13.4853 2 15.5 4.01472 15.5 6.5V9" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 22V14M13 18H21" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
   );
 };
 
-export default Squarelockadd01;
+export default SquareLockAdd01;

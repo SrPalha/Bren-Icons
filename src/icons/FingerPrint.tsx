@@ -1,10 +1,27 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Fingerprint: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const FingerPrint: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7.429 3.362c3.97-2.698 9.707-1.238 11.801 3.056m-8.373 15.506C15.584 22.582 20 18.895 20 14.21v-3.877M7.429 20.606C5.356 19.198 4 16.858 4 14.21V9.758c0-1.185.271-2.308.757-3.314"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 13.8c0 2.32-1.79 4.2-4 4.2s-4-1.88-4-4.2v-3.6c0-.644.138-1.254.385-1.8M12 6c2.21 0 4 1.88 4 4.2m-4 .3v3"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M7.42857 3.36201C11.3996 0.664088 17.136 2.12432 19.2301 6.41803M10.8571 21.9236C15.5839 22.5822 20 18.8952 20 14.2103V10.3333M7.42857 20.6058C5.35602 19.1977 4 16.8583 4 14.2103V9.75757C4 8.57285 4.27144 7.44988 4.75704 6.44444" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16 13.8C16 16.1196 14.2091 18 12 18C9.79086 18 8 16.1196 8 13.8V10.2C8 9.55584 8.13811 8.94555 8.38493 8.4M12 6C14.2091 6 16 7.8804 16 10.2" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12 10.5V13.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
   );
 };
 
-export default Fingerprint;
+export default FingerPrint;

@@ -1,10 +1,30 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Cctvcamera: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const CctvCamera: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="M15 13v1c0 2.828 0 4.243.879 5.121C16.757 20 18.172 20 21 20"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20.691 18v4"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="m9 10.83-.537.059c-.804.09-1.206.134-1.526.1-1.562-.17-2.794-1.555-2.929-3.294-.028-.356.017-.802.106-1.695"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.691 7h.01"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 7h4.5"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="M2.246 4.224c-.222-.897-.333-1.345-.164-1.679a.999.999 0 0 1 .23-.299C2.593 2 3.05 2 3.967 2h12.588C19.562 2 22 4.462 22 7.5S19.562 13 16.554 13h-4.749c-.816 0-1.224 0-1.574-.14a1.979 1.979 0 0 1-.713-.487c-.259-.277-.41-.66-.713-1.425l-.538-1.356c-.31-.785-.466-1.177-.753-1.468-.288-.29-.676-.447-1.453-.76L4.369 6.68c-.727-.294-1.09-.44-1.363-.7a1.994 1.994 0 0 1-.258-.298c-.217-.308-.312-.691-.502-1.458Z"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M15 13V14C15 16.8284 15 18.2426 15.8787 19.1213C16.7574 20 18.1716 20 21 20" stroke="#1B1C1B" strokeWidth="1.5" strokeLinejoin="round"/>
+<path d="M20.6914 18V22" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9 10.8292L8.46281 10.8889C7.65914 10.9782 7.25729 11.0229 6.93718 10.9882C5.37478 10.8189 4.1433 9.43436 4.00816 7.69526C3.98047 7.33895 4.02507 6.89263 4.11426 6" stroke="#1B1C1B" strokeWidth="1.5" strokeLinejoin="round"/>
+<path d="M13.6914 7H13.7004" stroke="#1B1C1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17 7H21.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2.246 4.22415C2.02398 3.32732 1.91297 2.8789 2.08182 2.5451C2.13924 2.43157 2.21764 2.33017 2.31277 2.24638C2.59249 2 3.05019 2 3.9656 2H16.5537C19.5616 2 22 4.46243 22 7.5C22 10.5376 19.5616 13 16.5537 13H11.8051C10.9893 13 10.5813 13 10.2309 12.8603C9.96064 12.7526 9.71719 12.5861 9.51778 12.3727C9.25919 12.096 9.10768 11.7135 8.80467 10.9485L8.26723 9.59167C7.95643 8.80701 7.80103 8.41468 7.51359 8.1244C7.22614 7.83413 6.83765 7.67719 6.06065 7.36333L4.3686 6.67983C3.64185 6.38626 3.27848 6.23948 3.00574 5.98088C2.91013 5.89022 2.82367 5.79019 2.74764 5.68227C2.53076 5.37443 2.43584 4.99101 2.246 4.22415Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinejoin="round"/>
+    </svg>
   );
 };
 
-export default Cctvcamera;
+export default CctvCamera;

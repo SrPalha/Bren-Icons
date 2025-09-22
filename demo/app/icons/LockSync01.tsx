@@ -1,10 +1,27 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Locksync01: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const LockSync01: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19.543 10.5 22 11c-.503-5.053-4.777-9-9.975-9C6.488 2 2 6.477 2 12s4.488 10 10.025 10c4.11 0 7.643-2.468 9.19-6"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M10.337 10.88c-1.08 0-1.62.78-1.74 1.26-.12.48-.12 2.22-.048 2.94.24.9.84 1.273 1.428 1.393.54.048 2.82.03 3.48.03.96.018 1.68-.342 1.98-1.422.06-.36.12-2.34-.03-2.94-.318-.96-1.11-1.26-1.71-1.26h-3.36Zm-.087-.421c0-.06.008-.406.01-.84 0-.398-.034-.78.156-1.13.71-1.414 2.75-1.27 3.254.17.087.237.092.612.09.96-.003.443.006.84.006.84"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M19.5433 10.5L22 11C21.497 5.94668 17.2229 2 12.0247 2C6.48824 2 2 6.47715 2 12C2 17.5228 6.48824 22 12.0247 22C16.1355 22 19.6684 19.5318 21.2153 16" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.3371 10.8809C9.25714 10.8809 8.71714 11.6609 8.59714 12.1409C8.47714 12.6209 8.47714 14.3609 8.54914 15.0809C8.78914 15.9809 9.38914 16.3529 9.97714 16.4729C10.5171 16.5209 12.7971 16.5029 13.4571 16.5029C14.4171 16.5209 15.1371 16.1609 15.4371 15.0809C15.4971 14.7209 15.5571 12.7409 15.4071 12.1409C15.0891 11.1809 14.2971 10.8809 13.6971 10.8809H10.3371Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M10.25 10.4585C10.25 10.3985 10.2582 10.0531 10.2596 9.61854C10.2608 9.22145 10.226 8.83854 10.4156 8.48814C11.126 7.07454 13.166 7.21854 13.67 8.65854C13.7573 8.89562 13.7625 9.27146 13.76 9.61854C13.7567 10.062 13.766 10.4585 13.766 10.4585" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
   );
 };
 
-export default Locksync01;
+export default LockSync01;

@@ -1,9 +1,24 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Moon: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const Moon: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M12 22c3.314 0 6-4.477 6-10S15.314 2 12 2"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 7h.009"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M10 14.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M8.5 2.62964C12.2967 4.04837 15 7.7085 15 12C15 16.2916 12.2967 19.9517 8.5 21.3704M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" strokeWidth="1.5"/>
+    </svg>
   );
 };
 

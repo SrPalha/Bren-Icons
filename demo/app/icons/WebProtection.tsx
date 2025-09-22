@@ -1,10 +1,29 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Webprotection: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const WebProtection: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M18 20.5c.889-.2 1.564-.528 2.109-1.067 1.391-1.378 1.391-3.594 1.391-8.028 0-4.434 0-6.65-1.391-8.028C18.717 2 16.479 2 12 2 7.522 2 5.282 2 3.891 3.377 2.5 4.755 2.5 6.971 2.5 11.405c0 4.434 0 6.65 1.391 8.028.545.54 1.22.867 2.109 1.067"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="M2.5 8.5h19"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 5.5h.009M11 5.5h.009"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 13c-1.426 0-2.35.909-3.442 1.24-.444.134-.666.202-.756.297-.09.095-.116.233-.169.51-.563 2.969.668 5.713 3.605 6.78.315.116.473.173.763.173.29 0 .447-.057.763-.172 2.936-1.068 4.166-3.812 3.603-6.78-.053-.278-.08-.417-.169-.511-.09-.095-.312-.163-.756-.297-1.093-.331-2.018-1.24-3.443-1.24Z"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M18 20.5C18.8888 20.3004 19.5638 19.9722 20.1088 19.4327C21.5 18.0554 21.5 15.8386 21.5 11.405C21.5 6.97145 21.5 4.75466 20.1088 3.37733C18.7175 2 16.4783 2 12 2C7.52166 2 5.28249 2 3.89124 3.37733C2.5 4.75466 2.5 6.97145 2.5 11.405C2.5 15.8386 2.5 18.0554 3.89124 19.4327C4.43619 19.9722 5.11124 20.3004 6 20.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M2.5 8.5H21.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinejoin="round"/>
+<path d="M6.99976 5.5H7.00874" stroke="#1B1C1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.9998 5.5H11.0088" stroke="#1B1C1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11.9991 13C10.5744 13 9.65061 13.9085 8.55807 14.2397C8.11384 14.3744 7.89172 14.4417 7.80183 14.5366C7.71194 14.6315 7.68562 14.7702 7.63297 15.0476C7.06963 18.0157 8.30095 20.7598 11.2375 21.8279C11.553 21.9426 11.7108 22 12.0007 22C12.2906 22 12.4484 21.9426 12.7639 21.8279C15.7002 20.7598 16.9304 18.0157 16.3669 15.0476C16.3142 14.7701 16.2879 14.6314 16.198 14.5365C16.1081 14.4416 15.886 14.3743 15.4418 14.2397C14.3488 13.9086 13.4239 13 11.9991 13Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
   );
 };
 
-export default Webprotection;
+export default WebProtection;

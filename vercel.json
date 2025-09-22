@@ -1,8 +1,8 @@
 {
-  "buildCommand": "npm install --no-audit --no-fund && npm run build && cd demo && npm run build",
+  "buildCommand": "cd demo && npm install && npm run build",
   "outputDirectory": "demo/.next",
   "framework": "nextjs",
-  "installCommand": "npm install --no-audit --no-fund && npm run build && cd demo && npm install --no-audit --no-fund",
+  "installCommand": "cd demo && npm install",
   "devCommand": "cd demo && npm run dev",
   "functions": {
     "demo/app/**/*.tsx": {

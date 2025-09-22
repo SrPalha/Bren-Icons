@@ -1,10 +1,29 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Lockcomputer: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const LockComputer: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M13 2h-3C6.227 2 4.341 2 3.17 3.172 2 4.343 2 6.229 2 10c0 3.771 0 5.657 1.17 6.828C4.343 18 6.229 18 10 18h4c3.77 0 5.656 0 6.828-1.172.653-.653.942-1.528 1.07-2.828"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M12 18v4"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M8 22h8"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11 15h2"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M16.75 5.376V4.122c.001-.397-.034-.78.156-1.13.71-1.414 2.75-1.27 3.254.17.088.238.093.613.09.96-.003.444.006 1.254.006 1.254m-3.506 0c-1.08 0-1.534.78-1.654 1.26-.12.48-.12 2.22-.048 2.94.24.9.84 1.272 1.428 1.392.54.048 2.82.03 3.48.03.96.018 1.68-.342 1.98-1.422.06-.36.12-2.34-.03-2.94-.318-.96-1.05-1.26-1.65-1.26m-3.506 0h3.506"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M12.9993 2H9.99927C6.22803 2 4.34242 2 3.17084 3.17157C1.99927 4.34315 1.99927 6.22876 1.99927 10C1.99927 13.7712 1.99927 15.6569 3.17084 16.8284C4.34242 18 6.22803 18 9.99927 18H13.9993C17.7705 18 19.6562 18 20.8277 16.8284C21.4809 16.1752 21.7699 15.3001 21.8978 14" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M11.9995 18V22" stroke="#1B1C1B" strokeWidth="1.5"/>
+<path d="M7.99927 22H15.9993" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M10.9995 15H12.9995" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M16.75 5.37591C16.75 5.3159 16.7486 4.55703 16.75 4.12245C16.7513 3.72536 16.7164 3.34245 16.906 2.99205C17.6164 1.57845 19.6564 1.72245 20.1604 3.16245C20.2477 3.39952 20.253 3.77537 20.2504 4.12245C20.2471 4.56593 20.2564 5.37591 20.2564 5.37591M16.75 5.37591C15.67 5.37591 15.2164 6.1559 15.0964 6.63591C14.9764 7.11591 14.9764 8.85591 15.0484 9.57591C15.2884 10.4759 15.8884 10.8479 16.4764 10.9679C17.0164 11.0159 19.2964 10.9979 19.9564 10.9979C20.9164 11.0159 21.6364 10.6559 21.9364 9.57591C21.9964 9.21591 22.0564 7.23591 21.9064 6.6359C21.5884 5.6759 20.8564 5.37591 20.2564 5.37591M16.75 5.37591H20.2564" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
   );
 };
 
-export default Lockcomputer;
+export default LockComputer;

@@ -7,19 +7,18 @@
 [![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Demo](https://img.shields.io/badge/Demo-ffffff?logo=Vercel&logoColor=000000)](https://bren-icons.vercel.app)
 
-Biblioteca de ícones SVG para React, escrita em TypeScript, com milhares de ícones e foco em performance e DX.
-
-> Nova versão: mais de 3.000 ícones, nomes padronizados sem hífen/underscore e melhorias de tipagem. Sem mudanças de quebra no uso básico.
+Uma biblioteca completa de **323 ícones SVG personalizados** para React, construída com TypeScript e otimizada para performance.
 
 ## ✨ Características
 
-- **Catálogo amplo**: 3.000+ ícones organizados por categorias
+- **323 ícones SVG** organizados por categoria
 - **Componentes React TypeScript** totalmente tipados
-- **Props personalizáveis**: size, color, className e SVGProps
-- **Tree-shaking** e suporte a CJS/ESM
-- **Acessibilidade**: atributos ARIA prontos para uso
-- **Zero dependências** externas e bundle otimizado
-- **Nomenclatura consistente**: apenas letras/números em `PascalCase` (sem `-` ou `_`)
+- **Props personalizáveis** (size, color, className)
+- **Tree-shaking** suportado para bundles otimizados
+- **Acessibilidade integrada** com atributos ARIA
+- **Suporte a CommonJS e ES Modules**
+- **Zero dependências** externas
+- **Bundle size otimizado**
 
 ## 🚀 Instalação
 
@@ -38,9 +37,9 @@ yarn add bren-icons
 pnpm add bren-icons
 ```
 
-### CDN (uso direto no browser)
+### CDN (para uso direto no browser)
 ```html
-<script src="https://unpkg.com/bren-icons/dist/index.js"></script>
+<script src="https://unpkg.com/bren-icons@1.0.1/dist/index.js"></script>
 ```
 
 ## 📖 Uso Básico
@@ -122,9 +121,7 @@ function NavigationIcon({ isActive }) {
 }
 ```
 
-## 📚 Ícones Disponíveis
-
-O pacote oferece milhares de ícones prontos para produção (3.000+). Abaixo, alguns grupos de exemplo. Consulte o demo para catálogo completo.
+## 📚 Ícones Disponíveis (323 Total)
 
 ### 🧭 Navegação (12 ícones)
 - `AccountCircle` - Ícone de perfil de usuário
@@ -265,40 +262,138 @@ O pacote oferece milhares de ícones prontos para produção (3.000+). Abaixo, a
 
 ## 🎨 Demo Interativo
 
-**Veja todos os ícones no demo:** [bren-icons.vercel.app](https://bren-icons.vercel.app)
+**Visite nosso demo online:** [Demo Bren Icons](https://bren-icons-demo.vercel.app)
 
-- Visualização completa e busca por nome/categoria
-- Copiar código com um clique
-- Interface responsiva
+### ✨ Funcionalidades do Demo
 
-## 📦 Sobre o Pacote
+- **Visualização completa** de todos os 323 ícones
+- **Busca em tempo real** por nome ou categoria
+- **Filtros por categoria** organizados
+- **Cópia de código** com um clique
+- **Interface responsiva** para todos os dispositivos
+- **Preview em tempo real** dos ícones
 
-- Compatível com React 16.8+
-- Tipos TypeScript incluídos
-- Exporta por ícone e também um objeto `Icons` para uso dinâmico
-- Suporte a ESM e CJS
+### 🚀 Tecnologias do Demo
 
-## 🔁 Notas de Atualização (resumo)
+- **Next.js 14** - Framework React moderno
+- **Tailwind CSS** - Estilização responsiva
+- **TypeScript** - Tipagem estática
+- **Vercel** - Deploy automático
 
-- Nomes padronizados sem hífen/underscore; formato `PascalCase`
-- Catálogo expandido (3.000+ ícones)
-- Tipos e props revisados para DX consistente
+## 🛠️ Desenvolvimento
 
-## 🧩 Compatibilidade
+### Pré-requisitos
 
-- Navegadores modernos e SSR
-- Funciona com bundlers populares (Vite, Webpack, Next.js)
+- Node.js 16+
+- npm/yarn/pnpm
 
-## 🤝 Suporte
+### Setup Local
 
-- Issues: [GitHub Issues](https://github.com/SrPalha/Bren-Icons/issues)
-- NPM: [bren-icons](https://www.npmjs.com/package/bren-icons)
-- Demo: [bren-icons.vercel.app](https://bren-icons.vercel.app)
+```bash
+# Clone o repositório
+git clone https://github.com/SrPalha/Bren-Icons.git
+cd Bren-Icons
+
+# Instale dependências
+npm install
+
+# Gere componentes de ícones
+npm run generate-icons
+
+# Build do projeto
+npm run build
+
+# Desenvolvimento
+npm run dev
+```
+
+### Scripts Disponíveis
+
+| Script | Descrição |
+|--------|-----------|
+| `npm run build` | Build de produção |
+| `npm run dev` | Modo desenvolvimento |
+| `npm run generate-icons` | Gera componentes de ícones |
+| `npm run clean` | Limpa arquivos de build |
+| `npm run publish:check` | Verifica se pode publicar |
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── icons/           # Componentes dos ícones
+├── types/           # Definições TypeScript
+└── index.ts         # Arquivo principal de exportação
+
+scripts/
+├── generate-icons.js # Script para gerar componentes
+└── publish.js       # Script de publicação
+
+examples/
+└── index.html       # Exemplo interativo
+
+demo/                 # Demo Next.js para Vercel
+├── app/             # Páginas Next.js
+├── components/      # Componentes React
+└── package.json     # Dependências do demo
+```
+
+## 🌐 Deploy
+
+### Demo na Vercel
+
+O demo está configurado para deploy automático na Vercel:
+
+1. **Conecte o repositório** na Vercel
+2. **Deploy automático** a cada push para main
+3. **Domínio personalizado** disponível
+4. **Build otimizado** para produção
+
+### Configuração Automática
+
+- ✅ `vercel.json` configurado
+- ✅ Build command otimizado
+- ✅ Output directory correto
+- ✅ Framework detectado automaticamente
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Por favor, leia nosso [Guia de Contribuição](.github/CONTRIBUTING.md) antes de submeter um Pull Request.
+
+### Como Contribuir
+
+1. **Fork** o projeto
+2. **Crie** uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** para a branch (`git push origin feature/AmazingFeature`)
+5. **Abra** um Pull Request
+
+### Adicionando Novos Ícones
+
+1. Adicione o arquivo SVG na pasta `icones/`
+2. Execute `npm run generate-icons`
+3. Teste se o ícone aparece corretamente
+4. Faça commit das mudanças
 
 ## 📄 Licença
 
-MIT — veja [LICENSE](LICENSE).
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 🙏 Agradecimentos
+
+- **React** pela base sólida
+- **TypeScript** pela tipagem estática
+- **SVG** pelos ícones vetoriais
+- **Vercel** pelo hosting do demo
+- **Comunidade** pelo feedback e contribuições
+
+## 📞 Suporte
+
+- **Issues**: [GitHub Issues](https://github.com/SrPalha/Bren-Icons/issues)
+- **Documentação**: [README.md](README.md)
+- **Demo**: [Demo Online](https://bren-icons-demo.vercel.app)
+- **NPM**: [bren-icons](https://www.npmjs.com/package/bren-icons)
 
 ---
 
-Desenvolvido com ❤️ por Bren.
+**Desenvolvido com ❤️ pela Bren para a comunidade React**

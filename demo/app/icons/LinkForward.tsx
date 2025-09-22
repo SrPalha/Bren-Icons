@@ -1,10 +1,32 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Linkforward: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const LinkForward: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19.192 9.441 17.227 7.47c-1.417-1.421-1.972-2.185-2.738-1.915-.957.337-.642 2.463-.642 3.18-1.486 0-3.032-.131-4.497.144C4.513 9.787 3 13.715 3 18c1.37-.97 2.737-2.003 4.382-2.452 2.054-.562 4.348-.294 6.465-.294 0 .718-.314 2.844.642 3.181.868.306 1.321-.494 2.738-1.915l1.965-1.972C20.397 13.338 21 12.733 21 11.995c0-.74-.603-1.344-1.808-2.554Z"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <g clipPath="url(#clip0_93_480)">
+<path d="M19.1918 9.44118L17.2265 7.46899C15.8104 6.04799 15.2554 5.28357 14.4886 5.55381C13.5325 5.89077 13.8472 8.01692 13.8472 8.73471C12.3607 8.73471 10.8152 8.60259 9.34985 8.87787C4.51259 9.78664 3 13.7153 3 18C4.3691 17.0302 5.73683 15.997 7.38233 15.5476C9.43637 14.9865 11.7304 15.2542 13.8472 15.2542C13.8472 15.972 13.5325 18.0982 14.4886 18.4351C15.3575 18.7413 15.8104 17.9409 17.2265 16.5199L19.1918 14.5477C20.3973 13.338 21 12.7332 21 11.9945C21 11.2558 20.3973 10.6509 19.1918 9.44118Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_93_480">
+<rect width="24" height="24" fill="currentColor"/>
+</clipPath>
+</defs>
+    </svg>
   );
 };
 
-export default Linkforward;
+export default LinkForward;

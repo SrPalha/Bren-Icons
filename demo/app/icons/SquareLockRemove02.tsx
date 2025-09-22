@@ -1,10 +1,27 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Squarelockremove02: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const SquareLockRemove02: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M17.943 17.057 17 18m0 0-.943.943M17 18l.943.943M17 18l-.943-.943m3.771 3.771a4 4 0 1 1-5.656-5.656 4 4 0 0 1 5.656 5.656Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M11.5 21.999 11 22c-1.585 0-3.024-.034-4.44-.1-1.684-.076-3.067-1.385-3.292-3.055C3.12 17.755 3 16.638 3 15.5c0-1.138.121-2.255.268-3.345.225-1.67 1.608-2.979 3.292-3.056A95.563 95.563 0 0 1 11 9c1.585 0 3.024.034 4.44.1 1.456.066 2.608 1.054 3.06 2.4"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6.5 9V6.5a4.5 4.5 0 0 1 9 0V9"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M17.9428 17.0572L17 18M17 18L16.0572 18.9428M17 18L17.9428 18.9428M17 18L16.0572 17.0572M19.8284 20.8284C18.2663 22.3905 15.7337 22.3905 14.1716 20.8284C12.6095 19.2663 12.6095 16.7337 14.1716 15.1716C15.7337 13.6095 18.2663 13.6095 19.8284 15.1716C21.3905 16.7337 21.3905 19.2663 19.8284 20.8284Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M11.5 21.9989C11.3349 21.9996 11.1683 22 11 22C9.4153 22 7.97627 21.966 6.55966 21.9009C4.87613 21.8235 3.49269 20.515 3.26781 18.8447C3.12105 17.7547 3 16.6376 3 15.5C3 14.3624 3.12105 13.2453 3.26781 12.1553C3.49269 10.485 4.87613 9.17649 6.55966 9.09909C7.97627 9.03397 9.4153 9 11 9C12.5847 9 14.0237 9.03397 15.4403 9.09909C16.8963 9.16603 18.0482 10.1538 18.5 11.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M6.5 9V6.5C6.5 4.01472 8.51472 2 11 2C13.4853 2 15.5 4.01472 15.5 6.5V9" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
   );
 };
 
-export default Squarelockremove02;
+export default SquareLockRemove02;

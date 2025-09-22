@@ -1,10 +1,29 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Securitypassword: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const SecurityPassword: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M2.5 9c.03-.805.12-1.623.27-2.45.11-.616.166-.924.356-1.135.19-.211.66-.36 1.599-.66C7.035 4.019 8.987 2 11.998 2c3.012 0 4.967 2.02 7.277 2.755.939.3 1.408.449 1.598.66.19.21.246.519.357 1.135.15.827.24 1.645.27 2.45m-2.055 8c-1.32 2.023-3.268 3.637-5.83 4.617-.667.255-1 .383-1.614.383-.612 0-.946-.128-1.613-.383-2.562-.98-4.51-2.594-5.831-4.617"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="m8.5 12 1 1m0 0 1 1m-1-1 1-1m-1 1-1 1m-5-2 1 1m0 0 1 1m-1-1 1-1m-1 1-1 1m10-2 1 1m0 0 1 1m-1-1 1-1m-1 1-1 1m5-2 1 1m0 0 1 1m-1-1 1-1m-1 1-1 1"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M2.5 9C2.53045 8.19543 2.6201 7.37669 2.76932 6.55013C2.8806 5.93375 2.93623 5.62556 3.12624 5.41465C3.31624 5.20374 3.78574 5.05413 4.72473 4.7549C7.03407 4.01899 8.98673 2 11.9982 2C15.0099 2 16.9647 4.01915 19.275 4.75499C20.2139 5.05405 20.6834 5.20358 20.8734 5.41449C21.0635 5.6254 21.1191 5.93364 21.2305 6.55013C21.3797 7.37669 21.4695 8.19543 21.5 9M19.4451 17C18.125 19.0226 16.1772 20.6375 13.6147 21.6175C12.9478 21.8725 12.6143 22 12.0015 22C11.3887 22 11.0553 21.8725 10.3883 21.6175C7.82558 20.6375 5.87726 19.0227 4.55666 17" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8.5 12L9.5 13M9.5 13L10.5 14M9.5 13L10.5 12M9.5 13L8.5 14" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M3.5 12L4.5 13M4.5 13L5.5 14M4.5 13L5.5 12M4.5 13L3.5 14" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M13.5 12L14.5 13M14.5 13L15.5 14M14.5 13L15.5 12M14.5 13L13.5 14" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M18.5 12L19.5 13M19.5 13L20.5 14M19.5 13L20.5 12M19.5 13L18.5 14" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
   );
 };
 
-export default Securitypassword;
+export default SecurityPassword;

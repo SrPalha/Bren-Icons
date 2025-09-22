@@ -5,22 +5,6 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
-## [2.1.0] - 2025-09-22
-
-### Adicionado
-- Catálogo expandido para 3.000+ ícones
-- Objeto `Icons` exportado para uso dinâmico
-
-### Alterado
-- Nomes de ícones padronizados em `PascalCase` apenas com letras/números
-- Removidos hífens e underscores dos nomes e arquivos
-
-### Correções
-- Normalização de `fill`/`stroke` para `currentColor` quando aplicável
-- Ajustes de atributos SVG para React (camelCase)
-
----
-
 ## [1.0.2] - 2024-12-19
 
 ### Adicionado

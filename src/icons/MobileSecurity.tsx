@@ -1,10 +1,28 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Mobilesecurity: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const MobileSecurity: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M11 2C7.7 2 6.05 2 5.024 3.025 3.999 4.05 3.999 5.7 3.999 9v6c0 3.3 0 4.95 1.026 5.975C6.05 22 7.7 22 10.999 22c3.3 0 4.95 0 5.975-1.025C18 19.95 18 18.3 18 15v-1"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 19h2"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M14.836 5.379c-1.08 0-1.62.78-1.74 1.26-.12.48-.12 2.22-.047 2.94.24.9.84 1.272 1.428 1.392.54.048 2.82.03 3.48.03.96.018 1.68-.342 1.98-1.422.06-.36.12-2.34-.03-2.94-.319-.96-1.11-1.26-1.71-1.26h-3.36Zm-.086-.42c0-.06.008-.406.009-.84.001-.398-.034-.78.156-1.13.71-1.414 2.75-1.27 3.254.17.088.237.093.612.09.96-.003.443.006.84.006.84"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M10.9994 2C7.69956 2 6.04964 2 5.02452 3.02513C3.99939 4.05025 3.99939 5.70017 3.99939 9V15C3.99939 18.2998 3.99939 19.9497 5.02452 20.9749C6.04964 22 7.69956 22 10.9994 22C14.2992 22 15.9491 22 16.9743 20.9749C17.9994 19.9497 17.9994 18.2998 17.9994 15V14" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M9.99939 19H11.9994" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M14.8365 5.37891C13.7565 5.37891 13.2165 6.15891 13.0965 6.63891C12.9765 7.11891 12.9765 8.85891 13.0485 9.57891C13.2885 10.4789 13.8885 10.8509 14.4765 10.9709C15.0165 11.0189 17.2965 11.0009 17.9565 11.0009C18.9165 11.0189 19.6365 10.6589 19.9365 9.57891C19.9965 9.21891 20.0565 7.23891 19.9065 6.63891C19.5885 5.67891 18.7965 5.37891 18.1965 5.37891H14.8365Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M14.7494 4.95854C14.7494 4.89854 14.7576 4.55312 14.759 4.11854C14.7602 3.72145 14.7254 3.33854 14.915 2.98814C15.6254 1.57454 17.6654 1.71854 18.1694 3.15854C18.2567 3.39562 18.2619 3.77146 18.2594 4.11854C18.2561 4.56203 18.2654 4.95854 18.2654 4.95854" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
   );
 };
 
-export default Mobilesecurity;
+export default MobileSecurity;

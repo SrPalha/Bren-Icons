@@ -1,10 +1,27 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Circlelockminus01: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const CircleLockMinus01: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M11 22c-3.936.098-7-3.192-7-7 0-3.866 3.119-7 6.966-7A6.957 6.957 0 0 1 17 11.5"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M15.5 9.5v-3a4.5 4.5 0 1 0-9 0v3M12 17h8"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M11 22C7.06358 22.0975 4 18.8075 4 15C4 11.134 7.11877 8 10.966 8C13.5444 8 15.7956 9.4077 17 11.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M15.5 9.5V6.5C15.5 4.01472 13.4853 2 11 2C8.51472 2 6.5 4.01472 6.5 6.5V9.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M12 17H20" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
   );
 };
 
-export default Circlelockminus01;
+export default CircleLockMinus01;

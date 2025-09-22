@@ -1,10 +1,29 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Websecurity: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const WebSecurity: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M19 20.5c.425-.191.79-.439 1.109-.76 1.391-1.402 1.391-3.658 1.391-8.17 0-4.511 0-6.767-1.391-8.168C18.717 2 16.479 2 12 2 7.522 2 5.282 2 3.891 3.402 2.5 4.803 2.5 7.059 2.5 11.57c0 4.512 0 6.768 1.391 8.17.32.321.684.569 1.109.76"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="M2.5 8.5h19"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 5.5h.009M11 5.5h.009"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M10.26 16.378c-1.08 0-1.543.78-1.663 1.26-.12.479-.12 2.218-.048 2.938.24.899.84 1.27 1.428 1.39.54.049 2.82.03 3.48.03.96.019 1.68-.341 1.98-1.42.06-.36.12-2.34-.03-2.939-.318-.96-1.047-1.259-1.647-1.259m-3.5 0h3.5m-3.5 0c0-.06-.002-.826 0-1.26 0-.398-.034-.78.156-1.13.71-1.413 2.75-1.27 3.254.17.087.237.093.612.09.96-.003.442 0 1.26 0 1.26"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M19 20.5C19.4255 20.309 19.7894 20.0612 20.1088 19.7395C21.5 18.3379 21.5 16.0821 21.5 11.5705C21.5 7.05894 21.5 4.80314 20.1088 3.40157C18.7175 2 16.4783 2 12 2C7.52166 2 5.28249 2 3.89124 3.40157C2.5 4.80314 2.5 7.05894 2.5 11.5705C2.5 16.0821 2.5 18.3379 3.89124 19.7395C4.21056 20.0612 4.57453 20.309 5 20.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M2.5 8.5H21.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinejoin="round"/>
+<path d="M7 5.5H7.00898" stroke="#1B1C1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 5.5H11.009" stroke="#1B1C1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M10.2596 16.378C9.1796 16.378 8.71714 17.1575 8.59714 17.6373C8.47714 18.117 8.47714 19.856 8.54914 20.5755C8.78914 21.475 9.38914 21.8468 9.97714 21.9667C10.5171 22.0147 12.7971 21.9967 13.4571 21.9967C14.4171 22.0147 15.1371 21.6549 15.4371 20.5755C15.4971 20.2157 15.5571 18.2369 15.4071 17.6373C15.0891 16.6778 14.36 16.378 13.76 16.378M10.2596 16.378H13.76M10.2596 16.378C10.2596 16.318 10.2582 15.5516 10.2596 15.1173C10.2609 14.7204 10.226 14.3378 10.4156 13.9876C11.126 12.5748 13.166 12.7187 13.67 14.1579C13.7573 14.3948 13.7626 14.7704 13.76 15.1173C13.7567 15.5605 13.76 16.378 13.76 16.378" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
   );
 };
 
-export default Websecurity;
+export default WebSecurity;

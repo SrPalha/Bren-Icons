@@ -1,10 +1,27 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Mobileprotection: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const MobileProtection: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M17.5 13.5V15c0 3.3 0 4.95-1.025 5.974C15.45 22 13.8 22 10.5 22s-4.95 0-5.975-1.025C3.5 19.95 3.5 18.3 3.5 15V9c0-3.3 0-4.95 1.025-5.975.857-.856 2.149-.997 4.475-1.02"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 2c-1.426 0-2.35.909-3.442 1.24-.444.134-.666.202-.756.297-.09.095-.116.233-.169.51-.563 2.969.668 5.713 3.605 6.78.315.116.473.173.763.173.29 0 .447-.057.763-.172 2.936-1.068 4.166-3.812 3.603-6.78-.053-.278-.08-.417-.169-.511-.09-.095-.312-.163-.756-.297C18.349 2.909 17.424 2 15.999 2ZM9.5 19h2"/> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path d="M17.5 13.4994V14.9993C17.5 18.2992 17.5 19.9491 16.4749 20.9742C15.4497 21.9993 13.7998 21.9993 10.5 21.9993C7.20017 21.9993 5.55025 21.9993 4.52513 20.9742C3.5 19.9491 3.5 18.2992 3.5 14.9993V8.99933C3.5 5.6995 3.5 4.04959 4.52513 3.02446C5.38151 2.16808 6.67392 2.02711 9 2.00391" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
+<path d="M15.9991 2C14.5744 2 13.6506 2.90855 12.5581 3.23971C12.1138 3.37436 11.8917 3.44168 11.8018 3.53659C11.7119 3.6315 11.6856 3.77019 11.633 4.04756C11.0696 7.0157 12.301 9.75979 15.2375 10.8279C15.553 10.9426 15.7108 11 16.0007 11C16.2906 11 16.4484 10.9426 16.7639 10.8279C19.7002 9.75978 20.9304 7.01569 20.3669 4.04756C20.3142 3.77014 20.2879 3.63143 20.198 3.53652C20.1081 3.44161 19.886 3.37432 19.4418 3.23974C18.3488 2.90862 17.4239 2 15.9991 2Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M9.5 19H11.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
   );
 };
 
-export default Mobileprotection;
+export default MobileProtection;

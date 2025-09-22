@@ -1,10 +1,32 @@
 import React from 'react';
-import type { IconProps } from '../types';
+import { IconProps } from '../types';
 
-const Linkforward: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+const LinkForward: React.FC<IconProps> = ({ 
+  size = 24, 
+  color = 'currentColor', 
+  className = '',
+  ...props 
+}) => {
   return (
-    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="link-forward" clip-path="url(#a)">     <g class="link-forward">       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m19.1918 9.44118-1.9653-1.97219c-1.4161-1.421-1.9711-2.18542-2.7379-1.91518-.9561.33696-.6414 2.46311-.6414 3.1809-1.4865 0-3.032-.13212-4.49735.14316C4.51259 9.78664 3 13.7153 3 18c1.3691-.9698 2.73683-2.003 4.38233-2.4524 2.05404-.5611 4.34807-.2934 6.46487-.2934 0 .7178-.3147 2.844.6414 3.1809.8689.3062 1.3218-.4942 2.7379-1.9152l1.9653-1.9722C20.3973 13.338 21 12.7332 21 11.9945c0-.7387-.6027-1.3436-1.8082-2.55332Z" class="Vector"/>     </g>   </g>   <defs>     <clipPath id="a" class="a">       <path fill="#fff" d="M0 0h24v24H0z"/>     </clipPath>   </defs> </svg>
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <g clipPath="url(#clip0_93_480)">
+<path d="M19.1918 9.44118L17.2265 7.46899C15.8104 6.04799 15.2554 5.28357 14.4886 5.55381C13.5325 5.89077 13.8472 8.01692 13.8472 8.73471C12.3607 8.73471 10.8152 8.60259 9.34985 8.87787C4.51259 9.78664 3 13.7153 3 18C4.3691 17.0302 5.73683 15.997 7.38233 15.5476C9.43637 14.9865 11.7304 15.2542 13.8472 15.2542C13.8472 15.972 13.5325 18.0982 14.4886 18.4351C15.3575 18.7413 15.8104 17.9409 17.2265 16.5199L19.1918 14.5477C20.3973 13.338 21 12.7332 21 11.9945C21 11.2558 20.3973 10.6509 19.1918 9.44118Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_93_480">
+<rect width="24" height="24" fill="currentColor"/>
+</clipPath>
+</defs>
+    </svg>
   );
 };
 
-export default Linkforward;
+export default LinkForward;
