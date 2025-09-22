@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Danger: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeWidth="1.5" d="M10.5 11.25a1.75 1.75 0 1 0-3.5 0 1.75 1.75 0 0 0 3.5 0Zm6.5 0a1.75 1.75 0 1 0-3.5 0 1.75 1.75 0 0 0 3.5 0Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m11 16 .293-.37c.333-.42.5-.63.707-.63.207 0 .374.21.707.63L13 16"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 2c-4.694 0-8.5 3.766-8.5 8.413 0 1.753.542 3.382 1.47 4.73-.253.28-.407.648-.407 1.053 0 .871.713 1.578 1.593 1.578v1.219c0 .65.31 1.269.87 1.597 3.21 1.88 6.739 1.88 9.948 0 .56-.328.87-.948.87-1.597v-1.22c.88 0 1.593-.706 1.593-1.577 0-.405-.154-.774-.407-1.053a8.313 8.313 0 0 0 1.47-4.73C20.5 5.766 16.694 2 12 2Zm2 19.5V20m-4 1.5V20"/> </svg>
+  );
+};
+
+export default Danger;

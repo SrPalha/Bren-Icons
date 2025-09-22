@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Validationapproval1: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path fill="#1B1C1B" d="M14 14.5a2.5 2.5 0 1 1 4.956.47c-.14.735-.532 1.41-.678 2.144L18 18.5l2.497.666A1.92 1.92 0 0 1 22 21.04c0 .53-.43.96-.96.96h-9.08a.96.96 0 0 1-.96-.96c0-.9.625-1.679 1.503-1.874L15 18.5l-.277-1.386c-.147-.733-.539-1.41-.679-2.144A2.512 2.512 0 0 1 14 14.5Z" opacity=".4"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="m18 18.5.278-1.386c.146-.733.538-1.41.678-2.144a2.5 2.5 0 1 0-4.912 0c.14.735.532 1.41.679 2.144L15 18.5m3 0h-3m3 0 2.497.666A1.92 1.92 0 0 1 22 21.04c0 .53-.43.96-.96.96h-9.08a.96.96 0 0 1-.96-.96c0-.9.625-1.679 1.503-1.874L15 18.5"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M17 9V8c0-2.828 0-4.243-.879-5.121C15.243 2 13.828 2 11 2H8c-2.828 0-4.243 0-5.121.879C2 3.757 2 5.172 2 8v8c0 2.828 0 4.243.879 5.121C3.757 22 5.172 22 8 22"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7 8.667s.625 0 1.25 1.333c0 0 1.985-3.333 3.75-4"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M6 14h4m-4 3h4"/> </svg>
+  );
+};
+
+export default Validationapproval1;

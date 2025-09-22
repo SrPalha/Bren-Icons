@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Laptopperformance: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 14.5v-8c0-1.886 0-2.828-.586-3.414C18.828 2.5 17.886 2.5 16 2.5H8c-1.886 0-2.828 0-3.414.586C4 3.672 4 4.614 4 6.5v8"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 8.394h.162c.811 0 1.217 0 1.527.174.31.174.448.48.727 1.093l.336.741c.183.403.275.604.423.598.147-.006.212-.214.341-.63l1.157-3.723c.133-.428.2-.642.349-.647.149-.005.239.203.417.62l.203.473c.27.628.404.942.717 1.121.313.18.726.18 1.552.18H16M3.498 15.515 4.02 14.5h15.932l.55 1.015c1.443 2.662 1.803 3.993 1.254 4.989-.548.996-2.002.996-4.91.996H7.154c-2.909 0-4.363 0-4.911-.996-.549-.996-.19-2.327 1.254-4.989Z"/> </svg>
+  );
+};
+
+export default Laptopperformance;

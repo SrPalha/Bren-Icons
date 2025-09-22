@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Invoice04: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="m16.44 21.348.553-.69c.485-.607 1.516-.558 1.925.09.493.781 1.711.626 2.049-.092.018-.037-.026.056.011-.267.038-.323.022-.397-.01-.544l-1.922-9.08c-.484-2.283-.725-3.424-1.557-4.095C16.66 6 15.485 6 13.14 6h-2.277c-2.347 0-3.52 0-4.351.67-.832.67-1.073 1.812-1.557 4.094l-1.923 9.08c-.031.148-.047.222-.01.545.038.323-.005.23.012.267.338.718 1.556.873 2.049.093.41-.649 1.44-.698 1.925-.091l.552.69c.696.87 2.15.87 2.845 0l.087-.109c.738-.922 2.28-.922 3.018 0l.087.109c.696.87 2.149.87 2.845 0Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M2.483 9.5c-.585-.608-.475-1.391-.475-3.348 0-1.957 0-2.936.586-3.544C3.179 2 4.12 2 6.005 2h11.99c1.884 0 2.826 0 3.412.608.585.608.585 1.587.585 3.544s.11 2.74-.476 3.348"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 10H9m5 4H8"/> </svg>
+  );
+};
+
+export default Invoice04;

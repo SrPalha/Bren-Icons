@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Laurelwreathfirst02: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M18.52 6.23C18.812 7.896 17.5 9 17.5 9s-1.603-.563-1.895-2.23C15.313 5.104 16.625 4 16.625 4s1.603.563 1.895 2.23Zm2.407 7.359c-1.345 1.129-2.99.5-2.99.5s-.3-1.758 1.044-2.887c1.345-1.129 2.99-.5 2.99-.5s.3 1.758-1.044 2.887Zm-4.194 6.237c-1.5-.575-1.733-2.19-1.733-2.19s1.267-1.038 2.767-.462c1.5.575 1.733 2.19 1.733 2.19s-1.267 1.038-2.767.462Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 17.637c1.405-1.201 3-3.58 3-5.91 0-.964-.154-1.885-.436-2.727M5.48 6.23C5.188 7.896 6.5 9 6.5 9s1.603-.563 1.895-2.23C8.687 5.104 7.375 4 7.375 4s-1.603.563-1.895 2.23Zm-2.407 7.359c1.345 1.129 2.99.5 2.99.5s.3-1.758-1.044-2.887c-1.345-1.129-2.99-.5-2.99-.5s-.3 1.758 1.044 2.887Zm4.194 6.237c1.5-.575 1.733-2.19 1.733-2.19s-1.267-1.038-2.767-.462c-1.5.575-1.733 2.19-1.733 2.19s1.267 1.038 2.767.462Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 17.637c-1.405-1.201-3-3.58-3-5.91 0-.964.154-1.885.436-2.727M11 10l1-.5v5m1 0h-2"/> </svg>
+  );
+};
+
+export default Laurelwreathfirst02;

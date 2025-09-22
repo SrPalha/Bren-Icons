@@ -1,26 +1,9 @@
 import React from 'react';
-import { IconProps } from '../types';
+import type { IconProps } from '../types';
 
-const Authorized: React.FC<IconProps> = ({ 
-  size = 24, 
-  color = 'currentColor', 
-  className = '',
-  ...props 
-}) => {
+const Authorized: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      {...props}
-    >
-      <path d="M4 17C4 19.2091 5.75326 21 7.91602 21C9.68999 21 11.1885 19.7951 11.6699 18.1429H15.8599C16.2819 18.1429 16.3075 18.169 16.3075 18.6V19.8571C16.3075 20.3959 16.3075 20.6653 16.4713 20.8326C16.6352 21 16.8989 21 17.4263 21H18.1874C18.6265 21 18.846 21 19.0007 20.8705C19.1554 20.741 19.1984 20.5211 19.2845 20.0813L19.5921 18.5103C19.661 18.1585 19.6797 18.1429 20.031 18.1429H20.7829C21.3104 18.1429 21.5741 18.1429 21.7379 17.9755C22.1045 17.6011 22.0698 15.7921 21.7379 15.4531C21.5741 15.2857 21.3104 15.2857 20.7829 15.2857H11.4552C10.8267 13.9343 9.47817 13 7.91602 13C5.75326 13 4 14.7909 4 17Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M8.00896 17H8" stroke="#1B1C1B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M19 12.5V9C19 6.17157 19 4.75736 18.1213 3.87868C17.2426 3 15.8284 3 13 3H8C5.17157 3 3.75736 3 2.87868 3.87868C2 4.75736 2 6.17157 2 9V14" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 17c0 2.21 1.753 4 3.916 4 1.774 0 3.272-1.205 3.754-2.857h4.19c.422 0 .448.026.448.457v1.257c0 .539 0 .808.163.976.164.167.428.167.955.167h.761c.44 0 .659 0 .814-.13.154-.129.197-.349.284-.789l.307-1.57c.069-.352.088-.368.439-.368h.752c.527 0 .791 0 .955-.168.367-.374.332-2.183 0-2.522-.164-.167-.428-.167-.955-.167h-9.328C10.827 13.934 9.478 13 7.916 13 5.753 13 4 14.79 4 17Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.009 17H8"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 12.5V9c0-2.828 0-4.243-.879-5.121C17.243 3 15.828 3 13 3H8c-2.828 0-4.243 0-5.121.879C2 4.757 2 6.172 2 9v5"/> </svg>
   );
 };
 

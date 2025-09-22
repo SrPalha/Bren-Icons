@@ -1,27 +1,10 @@
 import React from 'react';
-import { IconProps } from '../types';
+import type { IconProps } from '../types';
 
-const CircleLockAdd01: React.FC<IconProps> = ({ 
-  size = 24, 
-  color = 'currentColor', 
-  className = '',
-  ...props 
-}) => {
+const Circlelockadd01: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      {...props}
-    >
-      <path d="M16.5 22V14M12.5 18H20.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
-<path d="M10.6748 21.9979C6.64007 22.0953 3.5 18.8058 3.5 14.999C3.5 11.1335 6.69664 8 10.6399 8C13.0662 8 15.2098 9.18634 16.5 10.9995" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
-<path d="M15 9V6.5C15 4.01472 12.9853 2 10.5 2C8.01472 2 6 4.01472 6 6.5V9.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
-    </svg>
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M16.5 22v-8m-4 4h8m-9.825 3.998C6.64 22.095 3.5 18.806 3.5 14.999 3.5 11.133 6.697 8 10.64 8a7.174 7.174 0 0 1 5.86 3"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M15 9V6.5a4.5 4.5 0 1 0-9 0v3"/> </svg>
   );
 };
 
-export default CircleLockAdd01;
+export default Circlelockadd01;

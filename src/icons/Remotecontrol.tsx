@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Remotecontrol: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M12.5 2c3.3 0 4.95 0 5.975 1.025C19.5 4.05 19.5 5.7 19.5 9v6c0 3.3 0 4.95-1.025 5.975C17.45 22 15.8 22 12.5 22h-1c-3.3 0-4.95 0-5.975-1.025C4.5 19.95 4.5 18.3 4.5 15V9c0-3.3 0-4.95 1.025-5.975C6.55 2 8.2 2 11.5 2h1ZM8 15h2m-2 3h2m4-3h2m-2 3h2"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M15 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/> </svg>
+  );
+};
+
+export default Remotecontrol;

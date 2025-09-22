@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Charity: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7 19h10m2-3c.777.023 1.24.11 1.56.431.44.44.44 1.148.44 2.565 0 1.416 0 2.124-.44 2.564-.439.44-1.146.44-2.56.44H6c-1.414 0-2.121 0-2.56-.44C3 21.12 3 20.412 3 18.996c0-1.417 0-2.125.44-2.565.32-.32.783-.408 1.56-.431"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M14.315 19a3.39 3.39 0 0 0 1.185-2.571C15.5 14.535 13.933 13 12 13s-3.5 1.535-3.5 3.429A3.39 3.39 0 0 0 9.685 19"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 10h-2.395c-.294 0-.584-.066-.847-.194l-2.042-.988a1.947 1.947 0 0 0-.848-.193h-1.042C11.818 8.625 11 7.834 11 6.858c0-.04.027-.074.066-.085l2.541-.702a1.952 1.952 0 0 1 1.368.123l2.183 1.056M11 7.5 6.407 8.911a1.985 1.985 0 0 1-2.204-.753c-.369-.51-.219-1.242.319-1.552l7.515-4.337a1.994 1.994 0 0 1 1.568-.187L20 3.98"/> </svg>
+  );
+};
+
+export default Charity;

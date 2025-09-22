@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Pavilon: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6 11.334V21.5m12-10.164V21.5m-8.5 0 .507-3.04c.12-.719.179-1.078.34-1.344.398-.659 1.037-.62 1.653-.62.616 0 1.255-.039 1.654.62.16.266.22.625.34 1.343L14.5 21.5M3 21.5h18M7.12 11.481c-1.304 0-3.21-.617-4.085-2.97 2.302-.133 7.197-.68 8.97-6.011 1.848 5.414 6.667 5.878 8.969 6.01-.875 2.354-2.781 2.971-4.086 2.971H7.12Z"/> </svg>
+  );
+};
+
+export default Pavilon;

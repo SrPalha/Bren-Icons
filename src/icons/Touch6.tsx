@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Touch6: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M7.6 13.545V8.97m0 0V3.427c0-.822.716-1.425 1.554-1.425.84 0 1.511.603 1.511 1.425l.068 5.072M7.6 8.971c-1.345 1.194-2.817 2.576-3.012 2.962-.906 1.352-.835 2.564.709 4.634a45.576 45.576 0 0 0 2.223 2.736c.8.773.584 1.818.584 2.695m2.63-13.499v2.53m0-2.53c.716-.842 2.641-.542 3.045 1.178m0 0a1.533 1.533 0 0 1 .02.109m-.02-.11a.804.804 0 0 0 .02.11m-.02-.11c.228-1.177 2.958-.906 3.085 1.203v1.146m-3.049-1v-1.003a1.69 1.69 0 0 0-.015-.236m4.044 12.207v-1.039c.039-1.226 1.077-1.597 1.694-2.937.624-1.232.435-4.362.435-5.86.027-.356-.216-1.39-1.342-1.782-.354-.168-1.15-.409-1.834.074"/> </svg>
+  );
+};
+
+export default Touch6;

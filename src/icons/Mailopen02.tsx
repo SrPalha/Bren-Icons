@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Mailopen02: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="M2.016 14.551c.066 3.033.099 4.55 1.23 5.673 1.131 1.123 2.706 1.162 5.855 1.24 1.938.048 3.86.048 5.798 0 3.15-.078 4.724-.117 5.855-1.24 1.131-1.123 1.164-2.64 1.23-5.673a67.5 67.5 0 0 0-.05-4.459c-.042-.932-.062-1.399-.299-1.812-.236-.414-.644-.68-1.459-1.214l-3.76-2.463C14.273 3.2 13.203 2.5 12 2.5c-1.204 0-2.274.701-4.415 2.103L3.824 7.066c-.815.533-1.223.8-1.46 1.214-.236.413-.256.88-.297 1.812a67.513 67.513 0 0 0-.051 4.459Z"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="m2 9.5 4.265 3.09c.47.34.9.652 1.299.935 1.076.764 1.853.975 3.172.975h2.528c1.32 0 2.096-.21 3.172-.975.398-.283.828-.595 1.299-.935L22 9.5"/> </svg>
+  );
+};
+
+export default Mailopen02;

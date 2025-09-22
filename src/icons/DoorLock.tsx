@@ -1,27 +1,10 @@
 import React from 'react';
-import { IconProps } from '../types';
+import type { IconProps } from '../types';
 
-const DoorLock: React.FC<IconProps> = ({ 
-  size = 24, 
-  color = 'currentColor', 
-  className = '',
-  ...props 
-}) => {
+const Doorlock: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      {...props}
-    >
-      <path d="M3 22H21" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M4 22V6C4 2.69067 4.78933 2 8.57143 2H15.4286C19.2107 2 20 2.69067 20 6V22" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M13.92 11.759V9.85411C13.92 8.83227 13.0604 8.00391 12 8.00391C10.9396 8.00391 10.08 8.83227 10.08 9.85411V11.759M15 14.0841C15 15.695 13.6462 17.0039 12 17.0039C10.3538 17.0039 9 15.695 9 14.0841C9 12.3739 10.3538 11.0738 12 11.0738C13.6462 11.0738 15 12.3739 15 14.0841Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/>
-    </svg>
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 22h18M4 22V6c0-3.31.79-4 4.571-4h6.858C19.21 2 20 2.69 20 6v16"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M13.92 11.759V9.854c0-1.022-.86-1.85-1.92-1.85s-1.92.828-1.92 1.85v1.905M15 14.084c0 1.611-1.354 2.92-3 2.92s-3-1.309-3-2.92c0-1.71 1.354-3.01 3-3.01s3 1.3 3 3.01Z"/> </svg>
   );
 };
 
-export default DoorLock;
+export default Doorlock;

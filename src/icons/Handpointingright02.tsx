@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Handpointingright02: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} viewBox="0 0 24 24" fill="none"> <g id="hand-pointing-right-02"> <path id="Vector" d="M10 7.41602H13.5M13.5 7.41602H19.75C20.7165 7.41602 21.5 8.19952 21.5 9.16602C21.5 10.1325 20.7165 10.916 19.75 10.916H14.5L14.0224 13.993C13.7331 15.9216 13.5885 16.886 13.1816 17.5652C12.5094 18.6872 11.5 19.5 10.0264 19.5C9 19.5 8.3114 19.2463 6.46127 18.6296C5.28733 18.2383 4.70036 18.0426 4.23571 17.7236C3.47073 17.1983 2.91219 16.4233 2.65576 15.5315C2.5 14.9898 2.5 14.3711 2.5 13.1336V11.7287C2.5 9.94422 2.5 9.05199 2.83495 8.28585C2.98627 7.93971 3.18587 7.61675 3.42779 7.3266C3.96326 6.68439 4.7613 6.28536 6.35738 5.48732C7.65171 4.84016 8.29887 4.51658 8.96984 4.50083C9.27244 4.49373 9.57436 4.53247 9.86537 4.61572C10.5106 4.80032 11.0552 5.27679 12.1442 6.22971L13.5 7.41602Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> </g> </svg>
+  );
+};
+
+export default Handpointingright02;

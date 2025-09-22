@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Cabinet04: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M18 8H6c-1.886 0-2.828 0-3.414.533C2 9.065 2 9.923 2 11.636v2.728c0 1.714 0 2.57.586 3.104C3.172 18 4.114 18 6 18h12c1.886 0 2.828 0 3.414-.532.586-.533.586-1.39.586-3.104v-2.728c0-1.714 0-2.57-.586-3.103C20.828 8 19.886 8 18 8ZM5 18l-1 4m15-4 1 4m-6-4V8m-7 3.5h2m-2 3h2M5.44 7.56C5 7.122 5 6.415 5 5c0-1.414 0-2.121.44-2.56C5.878 2 6.585 2 8 2c1.414 0 2.121 0 2.56.44C11 2.878 11 3.585 11 5c0 1.414 0 2.121-.44 2.56C10.122 8 9.415 8 8 8c-1.414 0-2.121 0-2.56-.44Z"/> </svg>
+  );
+};
+
+export default Cabinet04;

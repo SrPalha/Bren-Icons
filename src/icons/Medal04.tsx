@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Medal04: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m12.777 13.65.792 1.597a.978.978 0 0 0 .64.476l1.435.24c.917.155 1.133.826.472 1.489L15 18.577a.99.99 0 0 0-.234.82l.32 1.394c.252 1.102-.329 1.529-1.296.952l-1.345-.803c-.244-.145-.644-.145-.891 0l-1.346.803c-.963.577-1.548.146-1.296-.952l.32-1.393a.99.99 0 0 0-.234-.821l-1.116-1.125c-.657-.663-.445-1.334.472-1.488l1.436-.24a.98.98 0 0 0 .634-.477l.792-1.597c.432-.867 1.134-.867 1.561 0Z"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M17.259 2.012H6.74c-.81 0-1.881-.158-2.435.684C4 3.161 4 3.833 4 5.178c0 1.147 0 1.72.206 2.204.352.825 1.14 1.183 1.814 1.573l3.297 1.904C10.633 11.62 11.292 12 12 12c.708 0 1.367-.38 2.683-1.14l3.297-1.905c.674-.39 1.462-.748 1.814-1.573C20 6.899 20 6.325 20 5.178c0-1.345 0-2.017-.306-2.482-.553-.842-1.625-.684-2.435-.684Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M12 2v5"/> </svg>
+  );
+};
+
+export default Medal04;

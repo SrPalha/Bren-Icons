@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Award05: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4.5 9.5a7.5 7.5 0 1 0 15 0 7.5 7.5 0 0 0-15 0Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 10.167s.75 0 1.5 1.333c0 0 2.382-3.333 4.5-4"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="m16.883 15 .67 3.21c.43 2.062.646 3.093.203 3.582-.442.489-1.21.069-2.746-.772l-2.274-1.245c-.363-.198-.544-.298-.736-.298-.192 0-.373.1-.736.298L8.99 21.02c-1.536.84-2.304 1.261-2.746.772-.443-.489-.227-1.52.203-3.582l.67-3.21"/> </svg>
+  );
+};
+
+export default Award05;

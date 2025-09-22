@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Roadlocation1: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M18.5 15h-2M13 15h-2m-3.5 0h-2"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="M12 2C9.79 2 8 3.809 8 6.04c0 1.276.5 2.268 1.5 3.154.705.625 1.559 1.663 2.071 2.503.246.404.594.404.858 0 .538-.824 1.366-1.878 2.071-2.502 1-.887 1.5-1.879 1.5-3.155C16 3.81 14.21 2 12 2Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6h.009"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 8c.774.15 1.359.4 1.828.817C22 9.86 22 11.535 22 14.888c0 3.353 0 5.029-1.172 6.07C19.657 22 17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.041C2 19.916 2 18.24 2 14.888c0-3.353 0-5.029 1.172-6.07C3.642 8.4 4.226 8.15 5 8"/> </svg>
+  );
+};
+
+export default Roadlocation1;

@@ -1,6 +1,6 @@
 {
   "name": "bren-icons",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Uma biblioteca completa de 300+ ícones SVG personalizados para React, construída com TypeScript e otimizada para performance",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -19,7 +19,9 @@
     "fix-names": "node scripts/fix-remaining-names.js",
     "fix-svg": "node scripts/fix-svg-and-names.js",
     "generate-icons": "node scripts/generate-icons.js",
-    "publish:check": "node scripts/publish.js"
+    "publish:check": "node scripts/publish.js",
+    "icons:extrair": "powershell -ExecutionPolicy Bypass -File scripts/extract-zips.ps1 icons",
+    "icons:semhifen": "powershell -ExecutionPolicy Bypass -File scripts/remove-hyphens-icons.ps1 icons"
   },
   "keywords": [
     "icons",

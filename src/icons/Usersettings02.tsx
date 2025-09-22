@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Usersettings02: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5.18 15.296c-1.258.738-4.555 2.243-2.547 4.126.982.92 2.074 1.578 3.448 1.578h7.838c1.374 0 2.466-.658 3.447-1.578 2.009-1.883-1.288-3.389-2.546-4.126a9.611 9.611 0 0 0-9.64 0Z"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M14 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M19.5 7.143V8m0-.857c-.723 0-1.36-.379-1.734-.954m1.734.954c.723 0 1.36-.379 1.734-.954m-3.468 0L17 6.714m.766-.525c-.22-.34-.35-.75-.35-1.189 0-.44.13-.849.35-1.189m3.468 2.378.766.525m-.766-.525c.22-.34.35-.75.35-1.189 0-.44-.13-.849-.35-1.189M19.5 2.857c.723 0 1.36.379 1.734.954M19.5 2.857c-.723 0-1.36.379-1.734.954m1.734-.954V2m1.734 1.811L22 3.286m-4.234.525L17 3.286"/> </svg>
+  );
+};
+
+export default Usersettings02;

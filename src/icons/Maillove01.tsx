@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Maillove01: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="m2 5.5 6.913 3.925c2.526 1.433 3.648 1.433 6.174 0L22 5.5"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11.5 19.996c-.466-.006-1.933.012-2.401 0-3.149-.08-4.723-.119-5.854-1.257-1.131-1.137-1.164-2.673-1.23-5.744a69.333 69.333 0 0 1 0-2.957c.066-3.072.099-4.607 1.23-5.745C4.376 3.156 5.95 3.116 9.099 3.037c1.94-.05 3.862-.05 5.802 0 3.149.079 4.723.119 5.854 1.256 1.131 1.138 1.164 2.673 1.23 5.745.013.66.018.316.013.974"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M15.015 14.387c1.073-.64 2.009-.382 2.571.028.23.169.346.253.414.253s.183-.084.414-.253c.562-.41 1.498-.668 2.571-.028 1.408.84 1.726 3.609-1.52 5.945-.62.445-.928.668-1.465.668s-.846-.223-1.464-.668c-3.247-2.336-2.929-5.106-1.521-5.945Z"/> </svg>
+  );
+};
+
+export default Maillove01;

@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Usbbugs1: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13.5 7.5v-2c0-1.404 0-2.107-.337-2.611a2 2 0 0 0-.552-.552C12.107 2 11.404 2 10 2c-1.404 0-2.107 0-2.611.337a2 2 0 0 0-.552.552C6.5 3.393 6.5 4.096 6.5 5.5v2"/>   <path fill="#1B1C1B" d="M5.586 8.086C5 8.672 5 9.614 5 11.5V17c0 .93 0 1.394.077 1.78a4 4 0 0 0 3.143 3.143C8.606 22 9.07 22 10 22s1.394 0 1.78-.077a3.995 3.995 0 0 0 1.963-1.012c-1.392-.332-2.425-1.559-2.425-3.022V16.11c0-1.718 1.425-3.111 3.182-3.111.17 0 .337.013.5.038V11.5c0-1.886 0-2.828-.586-3.414C13.828 7.5 12.886 7.5 11 7.5H9c-1.886 0-2.828 0-3.414.586Z" opacity=".4"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.5 4.5h1m7.182 10.278A2.69 2.69 0 0 1 19 13.953m-7.682.825A2.69 2.69 0 0 0 10 13.953m7.682 5.27a2.69 2.69 0 0 0 1.318.824m-7.682-.825a2.69 2.69 0 0 1-1.318.825M17.682 17H19m-7.682 0H10m4.5 4c-1.757 0-3.182-1.393-3.182-3.111V16.11c0-1.718 1.425-3.111 3.182-3.111s3.182 1.393 3.182 3.111v1.778c0 1.718-1.425 3.111-3.182 3.111Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14.996 10.501c-.018-1.24-.11-1.943-.582-2.415C13.828 7.5 12.886 7.5 11 7.5H9c-1.886 0-2.828 0-3.414.586C5 8.672 5 9.616 5 11.502v5.502c0 .93 0 1.395.077 1.782A4 4 0 0 0 8.22 21.93c.214.043.452.061.78.07"/> </svg>
+  );
+};
+
+export default Usbbugs1;

@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Rotateleft2: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m13.64 8.728.497 2.623-8.115-4.63a1.693 1.693 0 0 0-2.298.61A1.65 1.65 0 0 0 4.34 9.6l4.37 2.492-1.039 2.683c-.686 1.724-1.029 2.585-1.017 3.337.02 1.242.47 2.39 1.697 3.09.854.487 1.55.605 3.385.976 1.165.236 1.748.354 2.288.312a3.866 3.866 0 0 0 2.369-1.053c.39-.371.687-.88 1.281-1.898l.505-.862c.79-1.353 1.185-2.03 1.286-2.775.018-.134.029-.268.032-.403.02-.752-.262-1.482-.826-2.941l-1.826-4.724A1.674 1.674 0 0 0 15.03 6.79a1.654 1.654 0 0 0-1.391 1.937ZM8.863 4.465c.397.395 2.124.281 2.76.202m-2.76-.202c-.397-.396-.408-2.328-.328-2.963m.328 2.963c1.021-1.769 5.081-4.59 9.11-1.769 1.946 1.363 2.22 2.222 2.529 2.798"/> </svg>
+  );
+};
+
+export default Rotateleft2;
