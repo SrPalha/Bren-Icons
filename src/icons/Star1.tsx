@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Star1: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="star">     <g class="star">       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m13.7276 3.44418 1.7598 3.5487c.24.49399.8799.96782 1.4199 1.05855l3.1896.53432c2.0398.34278 2.5198 1.83485 1.0499 3.30675l-2.4797 2.5002c-.42.4234-.6499 1.24-.52 1.8248l.71 3.095c.5599 2.4498-.73 3.3975-2.8797 2.1171l-2.9897-1.7844c-.5399-.3226-1.4298-.3226-1.9798 0l-2.98963 1.7844c-2.13977 1.2804-3.43962.3226-2.87968-2.1171l.70992-3.095c.12998-.5848-.09999-1.4014-.51995-1.8248l-2.47972-2.5002C1.389 10.4206 1.85895 8.92853 3.89872 8.58575l3.18965-.53432c.52994-.09073 1.16987-.56456 1.40984-1.05855l1.75979-3.5487c.9599-1.92557 2.5197-1.92557 3.4696 0Z" class="Vector"/>     </g>   </g> </svg>
+  );
+};
+
+export default Star1;

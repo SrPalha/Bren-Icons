@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Fastfoward: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="fastfoward">     <g class="fastfoward">       <g class="Vector">         <path stroke="currentColor" strokeLinejoin="round" strokeWidth="1.5" d="M22.8371 12.9178c-.2824.7706-1.1357 1.3869-2.8423 2.6194-2.3271 1.6808-3.4907 2.5211-4.4636 2.4597-.743-.047-1.4336-.3962-1.9089-.9654C13 16.2863 13 14.8575 13 12c0-2.85754 0-4.28631.6223-5.03154.4753-.56913 1.1659-.91836 1.9089-.96531.9729-.06148 2.1365.77888 4.4636 2.4596 1.7066 1.23255 2.5599 1.84885 2.8423 2.61945.2172.5928.2172 1.2428 0 1.8356Z"/>         <path stroke="currentColor" strokeLinejoin="round" strokeWidth="1.5" d="M12.8371 12.9178c-.2824.7706-1.1357 1.3869-2.84228 2.6194-2.32713 1.6808-3.49069 2.5211-4.46362 2.4597-.74302-.047-1.43362-.3962-1.90888-.9654C3 16.2863 3 14.8575 3 12c0-2.85754 0-4.28631.62232-5.03154.47526-.56913 1.16586-.91836 1.90888-.96531.97293-.06148 2.13649.77888 4.46362 2.4596C11.7014 9.6953 12.5547 10.3116 12.8371 11.0822c.2172.5928.2172 1.2428 0 1.8356Z"/>       </g>     </g>   </g> </svg>
+  );
+};
+
+export default Fastfoward;

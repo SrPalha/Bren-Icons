@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Videocam: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="videocam" clip-path="url(#a)">     <g class="videocam">       <path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="M11 8h2m4 .90585.1259-.10389c2.1158-1.74573 3.1737-2.6186 4.0239-2.19714C22 7.02628 22 8.42355 22 11.2181v1.5638c0 2.7946 0 4.1918-.8502 4.6133-.8502.4214-1.9081-.4514-4.0239-2.1972L17 15.0941M2 11c0-3.29983 0-4.94975 1.02513-5.97487C4.05025 4 5.70017 4 9 4h1c3.2998 0 4.9497 0 5.9749 1.02513C17 6.05025 17 7.70017 17 11v2c0 3.2998 0 4.9497-1.0251 5.9749C14.9497 20 13.2998 20 10 20H9c-3.29983 0-4.94975 0-5.97487-1.0251C2 17.9497 2 16.2998 2 13v-2Z" class="Vector"/>     </g>   </g>   <defs>     <clipPath id="a" class="a">       <path fill="#fff" d="M0 0h24v24H0z"/>     </clipPath>   </defs> </svg>
+  );
+};
+
+export default Videocam;

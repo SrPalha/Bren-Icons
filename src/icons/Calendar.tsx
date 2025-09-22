@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Calendar: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="calendar">     <g class="calendar">       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M18 2v2M6 2v2M3 8h18M2.5 12.2432c0-4.35726 0-6.53592 1.25212-7.88956C5.00424 3 7.01949 3 11.05 3h1.9c4.0305 0 6.0458 0 7.2979 1.35364C21.5 5.70728 21.5 7.88594 21.5 12.2432v.5136c0 4.3573 0 6.5359-1.2521 7.8896C18.9958 22 16.9805 22 12.95 22h-1.9c-4.03051 0-6.04576 0-7.29788-1.3536C2.5 19.2927 2.5 17.1141 2.5 12.7568v-.5136Z" class="Vector"/>     </g>   </g> </svg>
+  );
+};
+
+export default Calendar;

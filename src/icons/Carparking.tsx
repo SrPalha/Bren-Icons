@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Carparking: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="car-parking" clip-path="url(#a)">     <g class="car-parking">       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M22 6H2m20 0c0-.93188 0-1.39782-.1522-1.76537-.203-.49005-.5924-.8794-1.0824-1.08239C20.3978 3 19.9319 3 19 3H5c-.93188 0-1.39782 0-1.76537.15224-.49005.20299-.8794.59234-1.08239 1.08239C2 4.60218 2 5.06812 2 6m20 0v15M2 6v15m14-2v2m-8-2v2m-.5-7 .24254-.9701c.36378-1.4552.54567-2.1827 1.08819-2.6063S10.1232 10 11.6231 10h.7538c1.4999 0 2.2498 0 2.7924.4236.5425.4236.7244 1.1511 1.0882 2.6063L16.5 14m-8 2.49v.01m7-.01v.01M17 14H7c-.55228 0-1 .4477-1 1v3c0 .5523.44772 1 1 1h10c.5523 0 1-.4477 1-1v-3c0-.5523-.4477-1-1-1Z" class="Vector"/>     </g>   </g>   <defs>     <clipPath id="a" class="a">       <path fill="#fff" d="M0 0h24v24H0z"/>     </clipPath>   </defs> </svg>
+  );
+};
+
+export default Carparking;

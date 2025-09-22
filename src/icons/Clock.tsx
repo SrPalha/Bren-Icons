@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Clock: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="clock">     <path fill="#1B1C1B" d="M12.75 8c0-.41421-.3358-.75-.75-.75s-.75.33579-.75.75h1.5ZM12 12h-.75c0 .1989.079.3897.2197.5303L12 12Zm1.4697 2.5303c.2929.2929.7677.2929 1.0606 0 .2929-.2929.2929-.7677 0-1.0606L14 14l-.5303.5303ZM22 12h-.75c0 5.1086-4.1414 9.25-9.25 9.25v1.5c5.9371 0 10.75-4.8129 10.75-10.75H22ZM12 22v-.75c-5.10863 0-9.25-4.1414-9.25-9.25h-1.5c0 5.9371 4.81294 10.75 10.75 10.75V22ZM2 12h.75c0-5.10863 4.14137-9.25 9.25-9.25v-1.5C6.06294 1.25 1.25 6.06294 1.25 12H2ZM12 2v.75c5.1086 0 9.25 4.14137 9.25 9.25h1.5c0-5.93706-4.8129-10.75-10.75-10.75V2Zm0 6h-.75v4h1.5V8H12Zm0 4-.5303.5303 2 2L14 14l.5303-.5303-2-2L12 12Z" class="Vector"/>   </g> </svg>
+  );
+};
+
+export default Clock;

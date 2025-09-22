@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Locationonfilled: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="location_on_filled" clip-path="url(#a)">     <g class="location_on_filled">       <path fill="#1B1C1B" d="M12.0015 1.25c-3.82612 0-7.47645 2.26303-9.00436 5.83468-1.42196 3.32392-.65218 6.15262.95057 8.57482 1.31406 1.9859 3.23064 3.7583 4.95971 5.3573l.00082.0007c.32944.3047.65207.6031.96242.8954l.00165.0016c.57499.5383 1.33889.8355 2.12919.8355.7904 0 1.5543-.2972 2.1293-.8356.2935-.2748.5978-.5552.9082-.8412 1.7479-1.6105 3.6914-3.4012 5.0192-5.4123 1.6009-2.4247 2.3679-5.2564.9477-8.57622C19.478 3.51303 15.8277 1.25 12.0015 1.25ZM12 7c-2.20914 0-4 1.79086-4 4 0 2.2091 1.79086 4 4 4 2.2091 0 4-1.7909 4-4 0-2.20914-1.7909-4-4-4Z" class="Vector" clipRule="evenodd"/>     </g>   </g>   <defs>     <clipPath id="a" class="a">       <path fill="#fff" d="M0 0h24v24H0z"/>     </clipPath>   </defs> </svg>
+  );
+};
+
+export default Locationonfilled;

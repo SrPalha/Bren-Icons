@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Taxi1: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m2.5 13 2 1m17-.5-2 .5M8 18.5l.246-.614c.365-.913.548-1.37.929-1.628.38-.258.872-.258 1.856-.258h1.938c.984 0 1.476 0 1.856.258.381.258.564.715.93 1.628L16 18.5M2 18v2.882c0 .379.24.725.622.894.247.11.483.224.769.224h1.718c.286 0 .522-.114.77-.224.38-.169.621-.515.621-.894V19m11 0v1.882c0 .379.24.725.622.894.247.11.483.224.769.224h1.718c.286 0 .522-.114.77-.224.38-.169.621-.515.621-.894V18m-2-8.5 1-.5M4 9.5 3 9"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="m4.5 10.5 1.088-3.265c.44-1.32.66-1.98 1.184-2.357.524-.378 1.22-.378 2.611-.378h5.234c1.391 0 2.087 0 2.61.378.525.377.745 1.037 1.185 2.357L19.5 10.5"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="M15.5 4.5c-.24-1.207-.36-1.81-.646-2.155C14.568 2 14.188 2 13.429 2h-2.857c-.76 0-1.14 0-1.426.345-.286.345-.406.948-.646 2.155m-4 6h15c.957.957 2.5 2.29 2.5 3.777v3.278c0 .539-.38.992-.883 1.055L18 19H6l-3.117-.39C2.38 18.547 2 18.094 2 17.555v-3.278c0-1.487 1.543-2.82 2.5-3.777Z"/> </svg>
+  );
+};
+
+export default Taxi1;

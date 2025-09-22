@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Play: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="play">     <g class="play">       <path stroke="currentColor" strokeLinejoin="round" strokeWidth="1.5" d="M20.8906 12.846c-.3535 1.343-2.0239 2.292-5.3649 4.1901-3.2297 1.8348-4.8445 2.7523-6.14587 2.3835-.53803-.1525-1.02824-.442-1.42359-.8409C7 17.6139 7 15.7426 7 12c0-3.7426 0-5.6139.95624-6.57868.39535-.39887.88556-.68844 1.42359-.8409 1.30137-.36877 2.91617.54865 6.14587 2.38351 3.341 1.89804 5.0114 2.84707 5.3649 4.19007.1459.5544.1459 1.1376 0 1.692Z" class="Vector"/>     </g>   </g> </svg>
+  );
+};
+
+export default Play;

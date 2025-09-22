@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Eyeclosed: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="eyeclosed">     <g class="eyeclosed">       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10.73 5.073c.4216-.04881.8456-.07318 1.27-.073 4.664 0 8.4 2.903 10 7-.3874.9966-.9107 1.9348-1.555 2.788M6.52 6.519C4.48 7.764 2.9 9.693 2 12c1.6 4.097 5.336 7 10 7 1.9321.0102 3.8292-.516 5.48-1.52m-7.6-7.6c-.2786.2786-.4996.6093-.65037.9734-.15078.364-.22838.7541-.22838 1.1481 0 .394.0776.7841.22838 1.1481.15077.3641.37177.6948.65037.9734.2786.2786.6093.4996.9734.6504.364.1508.7541.2284 1.1481.2284.394 0 .7841-.0776 1.1481-.2284.3641-.1508.6948-.3718.9734-.6504M4 4l16 16" class="Vector"/>     </g>   </g> </svg>
+  );
+};
+
+export default Eyeclosed;

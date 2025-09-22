@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Skippreviousbackfilled: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none">   <g class="skippreviousbackfilled">     <g class="skippreviousbackfilled">       <path fill="#1B1C1B" d="m12.1453 6.89181-.0893.05742c-1.3166.8464-2.36298 1.51907-3.1065 2.13454-.75636.62609-1.31445 1.28333-1.49358 2.13653-.10789.5139-.10789 1.0458 0 1.5597.17913.8533.73722 1.5105 1.49358 2.1366.74352.6154 1.7899 1.2881 3.1064 2.1345l.0894.0574c1.4336.9216 2.5689 1.6516 3.4953 2.0991.9321.4504 1.8182.7003 2.6932.4327.5161-.1578.9887-.4345 1.3835-.8069.6608-.6232.9171-1.5186 1.0376-2.5763.1201-1.0542.1201-2.4432.1201-4.2061v-.1017c0-1.7628 0-3.15191-.1201-4.2061-.1205-1.05764-.3768-1.95303-1.0376-2.57628-.3948-.37242-.8674-.64909-1.3835-.80691-.875-.26756-1.7611-.01764-2.6932.4327-.9264.44756-2.0617 1.17747-3.4953 2.0991ZM4.125 3c.55228 0 1 .44772 1 1v16c0 .5523-.44772 1-1 1-.55229 0-1-.4477-1-1V4c0-.55228.44772-1 1-1Z" class="Vector" clipRule="evenodd"/>     </g>   </g> </svg>
+  );
+};
+
+export default Skippreviousbackfilled;
