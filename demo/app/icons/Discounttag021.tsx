@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Discounttag021: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path fill="#1B1C1B" fillRule="evenodd" d="M2.67 15.144c-.92-1.19-.899-2.88.104-4a92.35 92.35 0 0 1 8.698-8.516c.31-.266.688-.432 1.094-.47 1.796-.164 6.97-.503 8.374.902 1.405 1.405 1.066 6.578.901 8.374a1.95 1.95 0 0 1-.47 1.094 92.344 92.344 0 0 1-8.515 8.698c-1.12 1.003-2.81 1.024-4 .104a34.008 34.008 0 0 1-6.186-6.186ZM17.5 5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" clipRule="evenodd" opacity=".4"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.996 10h.015M11 16h.015"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7 13h8m2.5-8a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M2.774 11.144c-1.003 1.12-1.024 2.81-.104 4a34.008 34.008 0 0 0 6.186 6.186c1.19.92 2.88.899 4-.104a92.344 92.344 0 0 0 8.516-8.698 1.95 1.95 0 0 0 .47-1.094c.164-1.796.503-6.97-.902-8.374-1.405-1.405-6.578-1.066-8.374-.901a1.952 1.952 0 0 0-1.094.47 92.35 92.35 0 0 0-8.698 8.515Z"/> </svg>
+  );
+};
+
+export default Discounttag021;

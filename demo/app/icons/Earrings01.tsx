@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Earrings01: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M11.5 10.5a2.51 2.51 0 0 0-.898-1.003c-1.321-.822-2.474-.49-3.167.037-.284.216-.426.325-.51.325-.083 0-.225-.109-.509-.325-.692-.528-1.845-.86-3.166-.037-1.734 1.08-2.126 4.64 1.873 7.645.761.572 1.142.858 1.803.858.66 0 1.041-.286 1.803-.858.235-.177.455-.355.66-.535m3.88-4.11c1.34-.822 2.51-.49 3.214.037.288.216.432.325.517.325.085 0 .229-.108.517-.325.703-.528 1.873-.86 3.214-.037 1.76 1.08 2.158 4.64-1.9 7.645-.774.572-1.16.858-1.831.858-.67 0-1.057-.286-1.83-.858-4.06-3.005-3.661-6.566-1.901-7.645Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M15.5 7.5a1.5 1.5 0 0 1 3 0c0 1.148-1.5 1.159-1.5 2v3m-11.5-8a1.5 1.5 0 1 1 3 0c0 1.148-1.5 1.159-1.5 2v3"/> </svg>
+  );
+};
+
+export default Earrings01;

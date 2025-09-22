@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Joker: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} viewBox="0 0 24 24" fill="none"> <g id="joker"> <path id="Vector" d="M4 7C5.10457 7 6 6.10457 6 5C6 3.89543 5.10457 3 4 3C2.89543 3 2 3.89543 2 5C2 6.10457 2.89543 7 4 7Z" stroke="#1B1C1B" strokeWidth="1.5"/> <path id="Vector_2" d="M20 9C21.1046 9 22 8.10457 22 7C22 5.89543 21.1046 5 20 5C18.8954 5 18 5.89543 18 7C18 8.10457 18.8954 9 20 9Z" stroke="#1B1C1B" strokeWidth="1.5"/> <path id="Vector_3" d="M4.96694 17C1.44331 11.5 8.98977 11 4.95922 7M6.37859 5C7.48264 5 9.99986 6 9.99986 8" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/> <path id="Vector_4" d="M5 17C10.2172 18.4523 13.3284 18.2088 19 17" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> <path id="Vector_5" d="M4 20C9.96256 21.4523 13.5182 21.2088 20 20" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> <path id="Vector_6" d="M18.0294 6.04395C15.6645 6.47832 10.2107 9.78438 11.0504 17.2375M18.2516 8.08823C17.0366 8.66084 15.1257 9.88681 17.5988 12.9119C18.3792 13.8666 19.2863 15.879 18.9515 16.8681" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> </g> </svg>
+  );
+};
+
+export default Joker;

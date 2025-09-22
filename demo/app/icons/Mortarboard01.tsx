@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Mortarboard01: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M1.998 8c0 1.341 8.096 5 9.988 5 1.891 0 9.987-3.659 9.987-5 0-1.343-8.096-5.001-9.987-5.001-1.892 0-9.988 3.658-9.988 5Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m5.992 11 1.251 5.8c.086.398.284.769.614 1.005 2.222 1.595 6.034 1.595 8.256 0 .33-.236.527-.607.613-1.005l1.251-5.8m2.5-1.5v7m0 0c-.79 1.447-1.14 2.222-1.496 3.501-.077.455-.016.684.298.888.127.083.28.112.431.112h1.519a.798.798 0 0 0 .457-.125c.291-.201.366-.422.287-.875-.311-1.188-.708-2-1.496-3.5Z"/> </svg>
+  );
+};
+
+export default Mortarboard01;

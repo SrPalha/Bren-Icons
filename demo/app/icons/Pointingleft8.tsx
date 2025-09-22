@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Pointingleft8: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M2 4.5h6m-6 0C2 3.8 3.994 2.492 4.5 2M2 4.5C2 5.2 3.994 6.508 4.5 7m6.515 6.005H8.011m0 0H4.505A1.503 1.503 0 0 1 3 11.503c0-.829.674-1.501 1.505-1.501h5.464m-1.958 3.003.027 1.055c.018.71.406 1.327.978 1.667m.953-5.725h4.563m-4.563 0 2.76-2.594c1.867-1.572 3.229-.746 3.985-.166l2.438 1.615C21.219 10.082 22 11.5 22 12.692v4.88c0 2.266-2.382 4.38-4.566 4.38l-5.2.047a2.002 2.002 0 0 1-2.004-1.732l-.19-1.54m-1.024-3c.3.18.65.282 1.025.282h1.004m-2.03-.282.055 1.336a2.002 2.002 0 0 0 2.003 1.95h1.004"/> </svg>
+  );
+};
+
+export default Pointingleft8;

@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Globalsearch1: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path fill="#1B1C1B" d="M19.783 5.72A9.958 9.958 0 0 1 22 12a9.96 9.96 0 0 1-.969 4.3 4.051 4.051 0 1 0-4.73 4.731 9.96 9.96 0 0 1-4.3.97 9.973 9.973 0 0 1-3.75-.727l.26-.274c.674-.832.556-1.801.218-2.77-.231-.663-.36-1.03-.431-1.41-.09-.473-.09-.963-.09-2.068 0-1.987-.52-2.483-3.119-2.483-1.233 0-2.284-.583-3.043-1.23.43-4.506 3.85-8.14 8.253-8.894-.551 1.165-.36 2.583.742 3.118.92.447 1.014 1.09 1.11 1.74.086.594.174 1.193.889 1.656 1 .647 2.499.485 3.998-1.456.767-.993 1.848-1.377 2.745-1.483Z" opacity=".4"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="M20.037 5.699c-.935.067-2.132.43-2.962 1.504-1.5 1.94-2.999 2.103-3.998 1.456-1.5-.97-.24-2.543-2-3.397C9.93 4.705 9.77 3.19 10.41 2"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M2.172 11.133c.762.662 1.656 1.122 2.914 1.122 2.6 0 3.12.497 3.12 2.484 0 1.986 0 1.986.52 3.477.338.969.456 1.938-.218 2.77"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M19.899 19.929 22 22m-.892-4.954a4.05 4.05 0 0 1-4.054 4.046A4.05 4.05 0 0 1 13 17.046 4.05 4.05 0 0 1 17.054 13a4.05 4.05 0 0 1 4.054 4.046Z"/> </svg>
+  );
+};
+
+export default Globalsearch1;

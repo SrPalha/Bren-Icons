@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Swiperight02: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} viewBox="0 0 24 24" fill="none"> <g id="swipe-right-02"> <path id="Vector" d="M20.9995 4.50098H14.9995M20.9995 4.50098C20.9995 3.80075 19.0052 2.49251 18.4995 2.00098M20.9995 4.50098C20.9995 5.20121 19.0052 6.50945 18.4995 7.00098" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> <path id="Vector_2" d="M15.3913 21.998C15.3395 20.084 15.4684 19.8535 15.6052 19.4277C15.7419 19.0019 16.6982 17.4665 17.0366 16.3695C18.1313 12.8202 17.111 12.0653 15.7507 11.0587C14.2422 9.94257 11.3968 9.37728 9.98573 9.49966V3.7462C9.98573 2.78288 9.20481 2.00195 8.24148 2.00195C7.27816 2.00195 6.49723 2.78288 6.49723 3.7462V9.96607M6.49723 9.96607L4.64647 11.6104C3.40594 12.7832 3.15329 13.4694 3.05591 13.8848C2.86688 14.6973 3.12509 15.576 4.32672 17.3166C5.49529 18.9234 6.43328 20.041 6.49774 20.9854V21.9988M6.49723 9.96607V14.0323" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> </g> </svg>
+  );
+};
+
+export default Swiperight02;

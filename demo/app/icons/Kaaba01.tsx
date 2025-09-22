@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Kaaba01: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeWidth="1.5" d="M3 22V5.99c0-.732 0-1.099.204-1.367.204-.27.556-.367 1.26-.563l7-1.949c.267-.074.4-.111.536-.111s.27.037.535.111l7 1.949c.705.196 1.057.294 1.261.563C21 4.89 21 5.258 21 5.99V22"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M2 22h20"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="m3 9 8.566-1.951c.286-.065.582-.065.868 0L21 9"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M19.65 12.7 21 13m-5.4-1.2.9.2m-3.6-.8L12 11l-.9.2m-6.75 1.5L3 13m5.4-1.2-.9.2"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M12 7v15"/> </svg>
+  );
+};
+
+export default Kaaba01;

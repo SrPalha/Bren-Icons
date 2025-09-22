@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Snail: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M9.577 14c0 2.5 1.923 6 5.963 6S22 16.866 22 13c0-4.97-4.23-9-9.938-9C6.415 4 1.413 8.255 2.056 15.386a.89.89 0 0 0 .658.79c2.7.683 5.474-.312 6.863-2.176Zm0 0c0-5.128 7.95-6.209 7.95-1 0 1.469-1.027 2.726-2.484 3.246"/> </svg>
+  );
+};
+
+export default Snail;

@@ -1,27 +1,10 @@
 import React from 'react';
-import { IconProps } from '../types';
+import type { IconProps } from '../types';
 
-const SecurityBlock: React.FC<IconProps> = ({ 
-  size = 24, 
-  color = 'currentColor', 
-  className = '',
-  ...props 
-}) => {
+const Securityblock: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      {...props}
-    >
-      <path d="M4.5 5C4.5 5 3.32697 5.20385 3.1372 5.41475C2.94743 5.62566 2.89186 5.93385 2.78072 6.55024C1.59143 13.1461 4.1909 19.2441 10.3903 21.6176C11.0564 21.8726 11.3894 22.0001 12.0015 22.0001C12.6135 22.0001 12.9466 21.8726 13.6126 21.6176C15.6225 20.848 17.2537 19.9426 18.5 18.5" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M7.5 3.42011C8.8253 2.69687 10.2287 2 11.9982 2C15.0061 2 16.9585 4.01371 19.2659 4.74758C20.2037 5.04583 20.6726 5.19496 20.8624 5.4053C21.0522 5.61564 21.1078 5.92306 21.219 6.53789C21.8418 9.98199 21.4267 13.29 20 16" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M2 2L22 22" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4.5 5s-1.173.204-1.363.415c-.19.21-.245.519-.356 1.135-1.19 6.596 1.41 12.694 7.61 15.068.665.255.998.382 1.61.382.613 0 .946-.127 1.612-.382 2.01-.77 3.64-1.675 4.887-3.118M7.5 3.42C8.825 2.697 10.229 2 11.998 2c3.008 0 4.96 2.014 7.268 2.748.938.298 1.407.447 1.596.657.19.21.246.518.357 1.133.623 3.444.208 6.752-1.219 9.462M2 2l20 20"/> </svg>
   );
 };
 
-export default SecurityBlock;
+export default Securityblock;

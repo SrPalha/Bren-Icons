@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Timequarterpass1: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8.376 3a9.72 9.72 0 0 0-.631.261m12.973 13.04c.102-.221.196-.447.282-.676m-2.501 3.74c.172-.16.338-.327.497-.499m-3.727 2.506a9.58 9.58 0 0 0 .573-.237m-3.686.859c-.23.008-.463.008-.694 0m-3.675-.854c.181.082.365.158.551.228m-3.665-2.447c.136.145.277.285.423.422m-2.463-3.678c.075.197.156.392.243.583m-.871-3.743a10.078 10.078 0 0 1 0-.626m.62-3.142c.074-.195.154-.388.24-.577m1.791-2.68c.145-.155.294-.304.449-.449"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M22 12c0-5.523-4.477-10-10-10"/>   <path fill="#1B1C1B" fillRule="evenodd" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm0-8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clipRule="evenodd" opacity=".4"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M13.5 12a1.5 1.5 0 1 1-1.5-1.5m1.5 1.5a1.5 1.5 0 0 0-1.5-1.5m1.5 1.5H16m-4-1.5V6"/> </svg>
+  );
+};
+
+export default Timequarterpass1;

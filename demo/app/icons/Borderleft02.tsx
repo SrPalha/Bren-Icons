@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Borderleft02: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.667 21.249c1.048-.194 1.82-.535 2.43-1.14.61-.605.954-1.37 1.15-2.409M10 21.495c.59.005 1.227.005 1.917.005s1.327 0 1.916-.005m7.662-7.595c.005-.584.005-1.216.005-1.9 0-.684 0-1.316-.005-1.9m-.249-3.8c-.195-1.04-.54-1.804-1.15-2.409-.61-.604-1.381-.946-2.43-1.14M10 2.505c.59-.005 1.227-.005 1.917-.005s1.327 0 1.916.005M6.5 21.5c-1.094-.198-1.899-.55-2.536-1.17C2.5 18.9 2.5 16.6 2.5 12s0-6.9 1.464-8.33C4.601 3.05 5.406 2.7 6.5 2.5"/> </svg>
+  );
+};
+
+export default Borderleft02;

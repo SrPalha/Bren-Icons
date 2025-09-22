@@ -1,32 +1,10 @@
 import React from 'react';
-import { IconProps } from '../types';
+import type { IconProps } from '../types';
 
-const AddCircle: React.FC<IconProps> = ({ 
-  size = 24, 
-  color = 'currentColor', 
-  className = '',
-  ...props 
-}) => {
+const Addcircle: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      {...props}
-    >
-      <g clipPath="url(#clip0_93_488)">
-<path d="M12 8V16M16 12H8M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-</g>
-<defs>
-<clipPath id="clip0_93_488">
-<rect width="24" height="24" fill="currentColor"/>
-</clipPath>
-</defs>
-    </svg>
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v8m4-4H8"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10 10-4.477 10-10Z"/> </svg>
   );
 };
 
-export default AddCircle;
+export default Addcircle;

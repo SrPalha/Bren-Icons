@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Bitcoinwallet: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeWidth="1.5" d="M16 13a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M11 19h5c2.828 0 4.243 0 5.121-.879C22 17.243 22 15.828 22 13v-1c0-2.828 0-4.243-.879-5.121-.641-.642-1.568-.815-3.121-.862m0 0C17.425 6 16.764 6 16 6h-6m8 .017c0-.948 0-1.422-.157-1.795a2 2 0 0 0-1.065-1.065C16.405 3 15.93 3 14.983 3H10C6.229 3 4.343 3 3.172 4.172 2 5.343 2 6.229 2 10"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.125 19.5v-6M5 13.5V12m0 9v-1.5m-1.875-3h3.75m0 0c.621 0 1.125.504 1.125 1.125v.75c0 .621-.504 1.125-1.125 1.125H2m4.875-3C7.496 16.5 8 15.996 8 15.375v-.75c0-.621-.504-1.125-1.125-1.125H2"/> </svg>
+  );
+};
+
+export default Bitcoinwallet;

@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const House04: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m7 9 4.77-4.265C13.066 3.578 13.713 3 14.5 3s1.435.578 2.73 1.735L22 9M8.5 8v12m12 0V8"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M3.5 14c.828 0 1.5-.895 1.5-2s-.672-2-1.5-2-1.5.895-1.5 2 .672 2 1.5 2Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M3.5 14v6"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M2 20h20m-10 0v-4c0-.943 0-1.414.293-1.707C12.586 14 13.057 14 14 14h1c.943 0 1.414 0 1.707.293.293.293.293.764.293 1.707v4m-3.5-9h2m-2-3h2"/> </svg>
+  );
+};
+
+export default House04;

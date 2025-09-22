@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Folderfavourite: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} viewBox="0 0 24 24" fill="none"> <g id="folder-favourite"> <path id="Vector" d="M7 6.5H16.75C18.8567 6.5 19.91 6.5 20.6667 7.00559C20.9943 7.22447 21.2755 7.50572 21.4944 7.83329C21.9146 8.46215 21.9856 9.46861 21.9976 11M12 6.5L11.3666 5.23313C10.8418 4.18358 10.3622 3.12712 9.19926 2.69101C8.6899 2.5 8.10802 2.5 6.94427 2.5C5.1278 2.5 4.21956 2.5 3.53806 2.88032C3.05227 3.15142 2.65142 3.55227 2.38032 4.03806C2 4.71956 2 5.6278 2 7.44427V10.5C2 15.214 2 17.5711 3.46447 19.0355C4.7646 20.3357 6.7682 20.4816 10.5 20.4979" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/> <path id="Vector_2" d="M14.1418 13.9414C15.3486 13.2103 16.4018 13.5049 17.0345 13.9742C17.294 14.1666 17.4237 14.2628 17.5 14.2628C17.5763 14.2628 17.706 14.1666 17.9655 13.9742C18.5982 13.5049 19.6514 13.2103 20.8582 13.9414C22.4419 14.9008 22.8002 18.0661 19.1472 20.7366C18.4514 21.2452 18.1035 21.4995 17.5 21.4995C16.8965 21.4995 16.5486 21.2452 15.8528 20.7366C12.1998 18.0661 12.5581 14.9008 14.1418 13.9414Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round"/> </g> </svg>
+  );
+};
+
+export default Folderfavourite;

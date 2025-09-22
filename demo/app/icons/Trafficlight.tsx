@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Trafficlight: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeWidth="1.5" d="M13.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M12 17c-1.87 0-2.804 0-3.5-.402A3 3 0 0 1 7.402 15.5C7 14.804 7 13.87 7 12V7c0-1.87 0-2.804.402-3.5A3 3 0 0 1 8.5 2.402C9.196 2 10.13 2 12 2s2.804 0 3.5.402A3 3 0 0 1 16.598 3.5C17 4.196 17 5.13 17 7v5c0 1.87 0 2.804-.402 3.5a3 3 0 0 1-1.098 1.098C14.804 17 13.87 17 12 17Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 17v5M7 8l-1.044-.877C4.641 6.02 3.984 5.468 4 4.966c.007-.204.073-.4.189-.564C4.475 4 5.316 4 7 4m10 4 1.044-.877C19.358 6.02 20.016 5.468 20 4.966a1.032 1.032 0 0 0-.189-.564C19.525 4 18.684 4 17 4m0 11 1.044-.877c1.314-1.103 1.972-1.655 1.956-2.157a1.032 1.032 0 0 0-.189-.564C19.525 11 18.684 11 17 11M7 15l-1.044-.877C4.641 13.02 3.984 12.469 4 11.966c.007-.204.073-.4.189-.564C4.475 11 5.316 11 7 11"/> </svg>
+  );
+};
+
+export default Trafficlight;

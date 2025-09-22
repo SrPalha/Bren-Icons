@@ -1,32 +1,10 @@
 import React from 'react';
-import { IconProps } from '../types';
+import type { IconProps } from '../types';
 
-const MailOpen: React.FC<IconProps> = ({ 
-  size = 24, 
-  color = 'currentColor', 
-  className = '',
-  ...props 
-}) => {
+const Mailopen: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-      {...props}
-    >
-      <g clipPath="url(#clip0_93_506)">
-<path d="M22.0099 5.88105C22.031 6.86675 22.0152 13.3709 21.9941 14.3566C21.9288 17.4222 21.8961 18.9549 20.765 20.0904C19.6338 21.2258 18.0596 21.2653 14.9111 21.3444C12.9706 21.3932 11.0492 21.3932 9.10876 21.3444C5.96026 21.2653 4.38601 21.2258 3.25489 20.0904C2.12376 18.9549 2.09107 17.4222 2.0257 14.3566C2.00468 13.3709 1.9889 7.36675 2.00992 6.38105M2.00993 6.88104L8.92295 10.798C11.4715 12.242 12.5483 12.242 15.0969 10.798L22.0099 6.88104L22.0099 5.73578C22.0099 5.52331 21.8756 5.33404 21.6751 5.26385L12.6706 2.11228C12.2429 1.96257 11.777 1.96257 11.3492 2.11228L2.34475 5.26385C2.14421 5.33404 2.00992 5.52331 2.00992 5.73578L2.00993 6.88104Z" stroke="currentColor" strokeWidth="1.5"/>
-</g>
-<defs>
-<clipPath id="clip0_93_506">
-<rect width="24" height="24" fill="currentColor"/>
-</clipPath>
-</defs>
-    </svg>
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="m5 7-1.218.813c-.874.582-1.311.873-1.548 1.317-.237.445-.235.967-.231 2.01.004 1.258.016 2.538.048 3.834.077 3.075.115 4.612 1.246 5.742 1.13 1.13 2.688 1.17 5.804 1.248a115.8 115.8 0 0 0 5.799 0c3.116-.078 4.674-.117 5.804-1.248 1.13-1.13 1.169-2.667 1.246-5.742.032-1.296.044-2.576.048-3.833.003-1.044.005-1.566-.232-2.01-.236-.445-.673-.736-1.547-1.318L19 7"/>   <path stroke="#1B1C1B" strokeLinejoin="round" strokeWidth="1.5" d="m2 10 6.913 4.148C10.417 15.05 11.169 15.5 12 15.5c.831 0 1.583-.45 3.087-1.353L22 10"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M5 12V6c0-1.886 0-2.828.586-3.414C6.172 2 7.114 2 9 2h6c1.886 0 2.828 0 3.414.586C19 3.172 19 4.114 19 6v6"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 10h4m-4-4h4"/> </svg>
   );
 };
 
-export default MailOpen;
+export default Mailopen;

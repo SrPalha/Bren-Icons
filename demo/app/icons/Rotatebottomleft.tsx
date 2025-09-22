@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Rotatebottomleft: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} viewBox="0 0 24 24" fill="none"> <g id="rotate-bottom-left"> <path id="Vector" d="M2.00098 10C2.00098 13.2998 2.00098 14.9497 3.0261 15.9749C4.05123 17 5.70114 17 9.00098 17C12.3008 17 13.9507 17 14.9758 15.9749C16.001 14.9497 16.001 13.2998 16.001 10C16.001 6.70017 16.001 5.05025 14.9759 4.02513C13.9507 3 12.3008 3 9.00098 3C5.70115 3 4.05123 3 3.0261 4.02513C2.00098 5.05025 2.00098 6.70017 2.00098 10Z" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> <path id="Vector_2" d="M22 14.4201L20.8899 13.0744C20.299 12.3581 20.0035 12 19.6364 12V13C19.6364 16.7712 19.6364 18.6569 18.4648 19.8284C17.2932 21 15.4076 21 11.6364 21H11" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> </g> </svg>
+  );
+};
+
+export default Rotatebottomleft;

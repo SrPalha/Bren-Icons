@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Swipedown02: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} viewBox="0 0 24 24" fill="none"> <g id="swipe-down-02"> <path id="Vector" d="M18.5 8.00195V2.00195M18.5 8.00195C17.7998 8.00195 16.4915 6.00765 16 5.50195M18.5 8.00195C19.2002 8.00195 20.5085 6.00765 21 5.50195" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> <path id="Vector_2" d="M15.3917 21.998C15.34 20.084 15.4689 19.8535 15.6056 19.4278C15.7424 19.002 16.6987 17.4665 17.0371 16.3695C18.1318 12.8202 17.1115 12.0653 15.7512 11.0588C14.2426 9.94256 11.3973 9.37728 9.98622 9.49966V3.7462C9.98622 2.78287 9.2053 2.00195 8.24197 2.00195C7.27865 2.00195 6.49772 2.78287 6.49772 3.7462V9.96606M6.49772 9.96606L4.64696 11.6104C3.40643 12.7832 3.15377 13.4695 3.0564 13.8849C2.86737 14.6973 3.12558 15.576 4.32721 17.3167C5.49578 18.9235 6.43377 20.041 6.49823 20.9854V21.9988M6.49772 9.96606V14.0324" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> </g> </svg>
+  );
+};
+
+export default Swipedown02;

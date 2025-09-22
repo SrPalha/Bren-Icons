@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Wavinghand2: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m18.915 11.7-1.542 4.131c-.718 1.925-1.078 2.887-1.664 3.546A4.876 4.876 0 0 1 12.155 21c-.893.016-1.877-.334-3.844-1.032-1.032-.366-1.548-.549-1.99-.823a4.742 4.742 0 0 1-1.62-1.672c-.255-.446-.414-.96-.731-1.986l-1.4-4.526a1.58 1.58 0 0 1 .714-1.824c.83-.495 1.916-.175 2.326.685l.934 1.963 2.632-7.05C9.45 4 10.282 3.622 11.034 3.89A1.404 1.404 0 0 1 11.9 5.7m0 0 .662-1.77c.273-.734 1.105-1.112 1.857-.845a1.404 1.404 0 0 1 .867 1.811l-.661 1.77M11.9 5.702l-1.487 3.984m4.212-3.017c.274-.734 1.105-1.112 1.858-.845a1.404 1.404 0 0 1 .866 1.812l-.661 1.77m-2.063-2.737-1.488 3.984m3.551-1.247c.274-.733 1.106-1.111 1.858-.844a1.404 1.404 0 0 1 .866 1.811l-.826 2.213m-1.898-3.18-.826 2.214"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeWidth="1.5" d="M21.33 14c.547 1.635-.273 3.426-1.83 4"/> </svg>
+  );
+};
+
+export default Wavinghand2;

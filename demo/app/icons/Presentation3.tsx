@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Presentation3: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeWidth="1.5" d="M3 10c0 2.828 0 4.243.879 5.121C4.757 16 6.172 16 9 16h6c2.828 0 4.243 0 5.121-.879C21 14.243 21 12.828 21 10V4.5H3V10Z"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 22a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm0-6v3m9-17H3c-.471 0-.707 0-.854.146C2 2.293 2 2.53 2 3v.5c0 .471 0 .707.146.854.147.146.383.146.854.146h18c.471 0 .707 0 .854-.146C22 4.207 22 3.97 22 3.5V3c0-.471 0-.707-.146-.854C21.707 2 21.47 2 21 2Z"/> </svg>
+  );
+};
+
+export default Presentation3;

@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Touchlocked2: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeWidth="1.5" d="M7.5 14V3.75a1.75 1.75 0 1 1 3.5 0V9.5c1.624-.072 4.399.122 6.5 2M7.5 22v-2s-1.828-2.09-2.325-2.909c-.643-1.057-1.497-2.2-1.051-3.482C4.624 12.169 7.5 10 7.5 10m11 7v-1.5a1.5 1.5 0 0 0-3 0V17m4.5 0h-6v5h6v-5Z"/> </svg>
+  );
+};
+
+export default Touchlocked2;

@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Milkoat: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeWidth="1.5" d="M20.64 20.636c1.53-1.529 2.077-3.46 0-5.536-2.077-2.076-5.539-2.768-6.924-1.384m6.924 6.92c-1.53 1.529-3.462 2.076-5.539 0-2.077-2.076-2.77-5.536-1.385-6.92m6.924 6.92-6.924-6.92"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11.942 21.999h-3.94m0 0H4a2 2 0 0 1-2-2V8.847a2 2 0 0 1 .56-1.39l2.425-2.51M8 21.998V8.039M4.986 4.946 8 8.04M4.986 4.946V3.502a1.5 1.5 0 0 1 1.5-1.5h7.553a1.5 1.5 0 0 1 1.5 1.53l-.021 1.034a1 1 0 0 0 .222.65l2.286 2.823m-10.025 0h10.025m0 0v2.444"/> </svg>
+  );
+};
+
+export default Milkoat;

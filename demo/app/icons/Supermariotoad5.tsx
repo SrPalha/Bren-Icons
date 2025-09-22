@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Supermariotoad5: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} viewBox="0 0 24 24" fill="none"> <g id="super-mario-toad-5"> <path id="Vector" d="M6.77458 20.6979C5.53107 19.6145 5.14197 17.6388 5 15.9911C9.12323 13.3333 15.8061 13.3363 19 16C18.8806 17.6717 18.4754 19.6026 17.2182 20.6979C15.2225 22.4365 8.76455 22.4316 6.77458 20.6979Z" stroke="#1B1C1B" strokeWidth="1.5"/> <path id="Vector_2" d="M9.00896 18H9M15 18H14.991" stroke="#1B1C1B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/> <path id="Vector_3" d="M5 18C3 17 2 14.2512 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 14.2512 21 17 19 18" stroke="#1B1C1B" strokeWidth="1.5"/> <path id="Vector_4" d="M12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z" stroke="#1B1C1B" strokeWidth="1.5"/> <path id="Vector_5" d="M3.36963 7C4.66856 7.31423 5.32655 8.8999 4.83928 10.5417C4.40097 12.0185 3.18529 13.0377 2 12.9989" stroke="#1B1C1B" strokeWidth="1.5"/> <path id="Vector_6" d="M20.6315 7C19.3317 7.31423 18.6732 8.8999 19.1608 10.5417C19.5992 12.0177 20.8145 13.0366 22 12.999" stroke="#1B1C1B" strokeWidth="1.5"/> </g> </svg>
+  );
+};
+
+export default Supermariotoad5;

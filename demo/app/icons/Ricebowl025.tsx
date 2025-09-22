@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Ricebowl025: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeWidth="1.5" d="m6 9 .73-1.113c1.845-2.809 2.767-4.213 3.954-4.652a3.795 3.795 0 0 1 2.632 0c1.187.439 2.109 1.843 3.953 4.652L18 9m.726 11.305C17.623 21 15.749 21 12 21c-3.748 0-5.623 0-6.726-.695-1.302-.821-2.134-2.252-2.255-3.823a9.356 9.356 0 0 1-.034-.563c-.003-.15.006-.343.022-.73.038-.89.257-2.57 1.268-4.189.841 1.634 3.644 4.16 6.226 6.168m8.225 3.137c1.303-.821 2.134-2.252 2.255-3.823.021-.275.032-.413.034-.563.003-.15-.005-.343-.022-.73-.038-.89-.257-2.57-1.268-4.189-1.409 2.075-6.026 6.214-9.224 6.168m8.225 3.137c-3.235-.077-6.015-1.418-8.225-3.137"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.5 11.5h-.009"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M11.5 7c.167.333.8 1 2 1m-3 2.5L9 12"/> </svg>
+  );
+};
+
+export default Ricebowl025;

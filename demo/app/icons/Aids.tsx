@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Aids: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeWidth="1.5" d="M12 2c-2.073 0-5.118.567-5.71 2.892-.524 2.057-.402 3.528.904 5.275l7.693 10.291c.774 1.036 1.162 1.553 1.686 1.542.524-.012.887-.546 1.613-1.614l.529-.778c.907-1.335 1.361-2.003 1.274-2.725-.086-.722-.686-1.268-1.885-2.36L6.8 4"/>   <path stroke="#1B1C1B" strokeWidth="1.5" d="M12 2c2.073 0 5.117.567 5.71 2.892.524 2.057.402 3.528-.904 5.275L15.436 12M17.2 4 12 8.841m0 7.755-2.888 3.862c-.774 1.036-1.16 1.553-1.685 1.542-.524-.012-.887-.546-1.613-1.614l-.529-.778c-.907-1.335-1.361-2.003-1.275-2.725.087-.722.687-1.268 1.886-2.36L8.606 12"/> </svg>
+  );
+};
+
+export default Aids;

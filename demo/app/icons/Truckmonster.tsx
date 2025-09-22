@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Truckmonster: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m21 14-.242-2.422c-.125-1.252-.188-1.877-.557-2.339-.369-.462-.966-.66-2.159-1.058-.369-.123-.619-.244-.855-.556-.755-.998-1.843-2.939-2.66-3.367C14.037 4 13.457 4 12.297 4H11c-.943 0-1.414 0-1.707.293C9 4.586 9 5.057 9 6v7.5m0-4H3V14"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.5 8H14c-.943 0-1.414 0-1.707-.293C12 7.414 12 6.943 12 6V4M9 5H8m4 5.5h1m.5 6.5h-3m-1-3h5m-10 0h-1c-.466 0-.699 0-.883.076C2.002 14.331 2 14.93 2 15.5s.002 1.17.617 1.424c.184.076.417.076.883.076m16-3h1c.466 0 .699 0 .883.076.615.255.617.854.617 1.424s-.002 1.17-.617 1.424c-.184.076-.417.076-.883.076"/>   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10.5 16.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0ZM17 20a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/> </svg>
+  );
+};
+
+export default Truckmonster;

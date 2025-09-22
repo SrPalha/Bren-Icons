@@ -1,0 +1,10 @@
+import React from 'react';
+import type { IconProps } from '../types';
+
+const Stamp01: React.FC<IconProps> = ({ size = 24, color = 'currentColor', className, ...rest }) => {
+  return (
+    <svg color={color} className={className} stroke="currentColor" {...rest} width={size} height={size} fill="none" viewBox="0 0 24 24">   <path stroke="#1B1C1B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4.985 19.182c.016 1.24.097 1.762.513 2.233.517.586 1.348.586 3.011.586h6.952c1.663 0 2.495 0 3.011-.586.416-.471.497-.994.513-2.233m-6.997-.111H4.757c-.718 0-1.34-.585-1.25-1.298.16-1.255.798-2.773 3.329-3.706.89-.329 1.869-.613 2.351-1.429.678-1.145.976-2.399-.287-4.55C6.836 4.022 9.924 2 12.01 2s5.137 2.15 3.053 6.089c-1.266 2.133-.93 3.404-.252 4.55.483.815 1.462 1.1 2.352 1.428 2.53.933 3.168 2.45 3.327 3.706.09.713-.53 1.298-1.248 1.298H12.01"/> </svg>
+  );
+};
+
+export default Stamp01;
